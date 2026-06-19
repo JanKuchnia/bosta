@@ -1,0 +1,63 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Zapytanie',
+    body: 'Wypełnij formularz lub zadzwoń. Opisz placówkę, zakres i termin — przygotujemy ofertę skrojoną pod przetarg lub bezpośrednie zamówienie.',
+  },
+  {
+    number: '02',
+    title: 'Kalkulacja i projekt',
+    body: 'W ciągu kilku dni przesyłamy wycenę z rysunkami technicznymi lub aranżacją przestrzeni. Dla projektów dedykowanych — bezpłatna wizualizacja.',
+  },
+  {
+    number: '03',
+    title: 'Produkcja',
+    body: 'Uruchamiamy produkcję w naszym zakładzie w Polance. Termin realizacji ustalamy przy zamówieniu — przestrzegamy go.',
+  },
+  {
+    number: '04',
+    title: 'Dostawa i montaż',
+    body: 'Własna baza transportowa i wykwalifikowane ekipy montażowe. Dowozimy i składamy w całej Polsce — bez podzlecania logistyki.',
+  },
+];
+---
+
+<section id="wspolpraca" class="section-pad bg-graphite-dark" aria-label="Jak współpracujemy">
+  <div class="container-site">
+    <div class="max-w-xl mb-14">
+      <p class="reveal label-caps text-beech mb-4">Zamówienia publiczne i B2G</p>
+      <h2 class="reveal reveal-d1 display-lg text-white mb-5">
+        Jak<br />współpracujemy
+      </h2>
+      <p class="reveal reveal-d2 editorial-body text-white/65">
+        Obsługujemy przetargi publiczne, bezpośrednie zamówienia szkół i współpracę
+        z generalnymi wykonawcami nowo budowanych placówek oświatowych.
+      </p>
+    </div>
+
+    <!-- Steps grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10">
+      {steps.map((step, i) => (
+        <div class:list={['reveal bg-graphite-dark p-8 lg:p-10', `reveal-d${Math.min(i + 1, 4)}`]}>
+          <span class="font-display font-black text-5xl text-white/10 leading-none block mb-6">{step.number}</span>
+          <h3 class="font-display font-bold text-white text-lg mb-3 tracking-tight">{step.title}</h3>
+          <p class="text-sm text-white/60 leading-relaxed">{step.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA row -->
+    <div class="reveal mt-12 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between border-t border-white/10 pt-10">
+      <p class="editorial-body text-white/70 max-w-md">
+        Masz pytanie o przetarg lub chcesz porozmawiać o projekcie? Napisz lub zadzwoń — odpowiadamy w godzinach pracy.
+      </p>
+      <a
+        href="#kontakt"
+        class="flex-shrink-0 inline-flex items-center h-11 px-6 bg-cta text-white font-display font-semibold text-sm tracking-tight hover:bg-cta-hover transition-colors"
+      >
+        Napisz do nas
+      </a>
+    </div>
+  </div>
+</section>

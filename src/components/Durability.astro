@@ -1,0 +1,76 @@
+---
+const features = [
+  {
+    title: 'Wzmocnione profile stalowe',
+    body: 'Okrągłe, owalne i płasko-owalne profile dobierane do zastosowania. Spawane metodą MIG/MAG — żadnych nitów, żadnych słabych punktów.',
+  },
+  {
+    title: 'Bezpieczne zaokrąglone krawędzie',
+    body: 'Każdy narożnik i krawędź blatu wykończone z minimalnym promieniem bezpieczeństwa. Standard w całym portfolio — bez wyjątków.',
+  },
+  {
+    title: 'System wzrostowy ISO',
+    body: 'Numeracja rozmiarów 1–7 zgodna z PN-EN 1729-1:2016. Jeden producent, pełna spójność od sali przedszkolnej po salę liceum.',
+  },
+  {
+    title: 'Sklejka bukowa kształtowana',
+    body: 'Siedziska i oparcia z prasowanej, profilowanej sklejki bukowej — ciepłe w dotyku, trwałe mechanicznie, estetyczne po dekadach użytkowania.',
+  },
+  {
+    title: 'Lakiernia proszkowa',
+    body: 'Powłoka antykorozyjna, odporna na zarysowania i środki chemiczne. Kolor nie schodzi — nawet po długim czasie intensywnego użytkowania.',
+  },
+  {
+    title: 'Oklejanie PCV/ABS',
+    body: 'Automatyczne oklejanie krawędzi wodoodpornymi obrzeżami. Płyta nie nasiąka wilgocią, nie pęcznieje, nie kruszy się na brzegach.',
+  },
+];
+
+// Placeholder: swap with macro/detail factory photo
+const bgImage = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80';
+---
+
+<section
+  id="trwalosc"
+  class="relative section-pad overflow-hidden"
+  style={`background-color: var(--graphite-dark);`}
+  aria-label="Trwałość i inżynieria"
+>
+  <!-- Subtle background texture image -->
+  <img
+    src={bgImage}
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-luminosity"
+    loading="lazy"
+    aria-hidden="true"
+    width="1920"
+    height="1080"
+  />
+
+  <div class="relative container-site">
+    <!-- Header -->
+    <div class="max-w-2xl mb-16 md:mb-20">
+      <p class="reveal label-caps text-beech mb-4">Inżynieria trwałości</p>
+      <h2 class="reveal reveal-d1 display-lg text-white mb-6">
+        Zbudowane,<br />żeby wytrzymać
+      </h2>
+      <p class="reveal reveal-d2 editorial-body text-white/65">
+        Projektujemy meble z myślą o intensywnej eksploatacji — nie o pokazaniu w katalogu.
+        Każdy detal to decyzja inżynierska, nie estetyczna.
+      </p>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+      {features.map((f, i) => (
+        <div
+          class:list={['reveal bg-graphite-dark/80 p-8 lg:p-10', `reveal-d${Math.min(i % 3 + 1, 4)}`]}
+        >
+          <div class="w-8 h-px bg-cta mb-6" aria-hidden="true"></div>
+          <h3 class="font-display font-bold text-lg text-white mb-3 tracking-tight">{f.title}</h3>
+          <p class="text-sm text-white/65 leading-relaxed">{f.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

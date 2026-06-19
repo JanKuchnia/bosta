@@ -1,0 +1,80 @@
+---
+const year = new Date().getFullYear();
+
+const navLinks = [
+  { href: '#produkty',    label: 'Produkty' },
+  { href: '#proces',      label: 'Proces' },
+  { href: '#certyfikaty', label: 'Certyfikaty' },
+  { href: '#o-firmie',    label: 'O firmie' },
+  { href: '#kontakt',     label: 'Kontakt' },
+];
+---
+
+<footer class="bg-graphite-dark border-t border-white/10" aria-label="Stopka">
+  <div class="container-site py-16 lg:py-20">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a href="/" class="font-display font-extrabold text-2xl text-white tracking-tighter block mb-4">
+          BOSTA
+        </a>
+        <p class="text-sm text-white/55 leading-relaxed max-w-sm mb-6">
+          Producent mebli szkolnych, przedszkolnych i biurowych. Własna produkcja end-to-end od 1992 roku.
+          Dowozimy i montujemy w całej Polsce.
+        </p>
+        <p class="label-caps text-white/35">pon – pt: 06:00 – 15:00</p>
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Nawigacja stopki">
+        <p class="label-caps text-white/35 mb-4">Nawigacja</p>
+        <ul class="space-y-2" role="list">
+          {navLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-white/60 hover:text-white transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <!-- Addresses -->
+      <div>
+        <p class="label-caps text-white/35 mb-4">Adresy</p>
+        <div class="space-y-5">
+          <address class="not-italic">
+            <p class="text-xs text-white/40 mb-1">Centrum logistyczno-handlowe</p>
+            <p class="text-sm text-white/70">ul. Drogowców 7</p>
+            <p class="text-sm text-white/70">32-400 Myślenice</p>
+          </address>
+          <address class="not-italic">
+            <p class="text-xs text-white/40 mb-1">Zakład produkcyjny</p>
+            <p class="text-sm text-white/70">Polanka 133</p>
+            <p class="text-sm text-white/70">32-400 Myślenice</p>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registry data -->
+    <div class="border-t border-white/10 pt-8">
+      <div class="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center">
+        <div class="text-xs text-white/30 space-y-1">
+          <p class="font-display font-semibold text-white/45 text-xs mb-2">
+            BOSTA Producent Mebli Szkolnych i Biurowych Sp. z o.o.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-1">
+            <span>NIP: 6810004062</span>
+            <span>REGON: 351010570</span>
+            <span>KRS: 0001208011</span>
+            <span>Kapitał zakładowy: 100 000,00 PLN</span>
+          </div>
+        </div>
+        <p class="text-xs text-white/25 flex-shrink-0">
+          &copy; {year} BOSTA Sp. z o.o.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

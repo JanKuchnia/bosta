@@ -1,0 +1,69 @@
+---
+import { products } from '@/data/products';
+---
+
+<section id="produkty" class="bg-canvas" aria-label="Segmenty produktowe">
+  {products.map((product, i) => (
+    <article
+      class:list={['border-t border-border-subtle overflow-hidden', i === products.length - 1 ? 'border-b' : '']}
+    >
+      <div class:list={[
+        'container-site grid lg:grid-cols-2 gap-0 items-stretch',
+      ]}>
+        <!-- Image -->
+        <div class:list={[
+          'relative aspect-[4/3] lg:aspect-auto lg:min-h-[520px] overflow-hidden',
+          product.imageLeft ? 'lg:order-first' : 'lg:order-last',
+        ]}>
+          <img
+            src={product.image}
+            alt={product.imageAlt}
+            class="img-cover cursor-zoom-in"
+            loading="lazy"
+            width="1200"
+            height="900"
+            data-lightbox={product.image}
+            data-lightbox-alt={product.imageAlt}
+          />
+          <!-- Subtle number overlay -->
+          <span
+            class="absolute bottom-4 right-4 font-display font-black text-7xl text-white/10 leading-none select-none pointer-events-none"
+            aria-hidden="true"
+          >
+            {String(i + 1).padStart(2, '0')}
+          </span>
+        </div>
+
+        <!-- Text -->
+        <div class:list={[
+          'flex flex-col justify-center py-12 lg:py-16',
+          product.imageLeft ? 'lg:pl-16' : 'lg:pr-16',
+        ]}>
+          <p class="reveal label-caps text-beech mb-4">{product.overline}</p>
+          <h2 class="reveal reveal-d1 display-md text-ink mb-6">{product.title}</h2>
+          <p class="reveal reveal-d2 editorial-body text-ink-muted mb-8 leading-relaxed">
+            {product.description}
+          </p>
+          <ul class="reveal reveal-d3 space-y-2 mb-10" role="list">
+            {product.items.map((item) => (
+              <li class="flex items-start gap-3 text-sm text-ink">
+                <svg class="flex-shrink-0 mt-1 w-4 h-4 text-cta" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div class="reveal reveal-d4">
+            <a
+              href="#kontakt"
+              class="inline-flex items-center h-11 px-6 bg-cta text-white font-display font-semibold text-sm tracking-tight hover:bg-cta-hover transition-colors"
+            >
+              Zapytaj o wycenę
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  ))}
+</section>

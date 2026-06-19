@@ -1,0 +1,58 @@
+---
+import ContactForm from './ContactForm';
+---
+
+<section id="kontakt" class="section-pad bg-surface-raised border-t border-border-subtle" aria-label="Kontakt i wycena">
+  <div class="container-site">
+    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+      <!-- Left: info -->
+      <div>
+        <p class="reveal label-caps text-beech mb-4">Kontakt</p>
+        <h2 class="reveal reveal-d1 display-lg text-ink mb-6">
+          Zapytaj<br />o wycenę
+        </h2>
+        <p class="reveal reveal-d2 editorial-body text-ink-muted mb-10">
+          Opisz placówkę i zakres wyposażenia — przygotujemy wycenę wraz z projektem aranżacji.
+          Obsługujemy zarówno przetargi publiczne, jak i bezpośrednie zamówienia.
+        </p>
+
+        <div class="reveal reveal-d3 space-y-8">
+          <!-- Hours -->
+          <div class="border-l-2 border-cta pl-4">
+            <p class="label-caps text-ink-muted mb-1">Godziny pracy</p>
+            <p class="font-display font-bold text-ink">Poniedziałek – Piątek</p>
+            <p class="text-ink-muted">06:00 – 15:00</p>
+          </div>
+
+          <!-- Addresses -->
+          <div class="border-l-2 border-border-subtle pl-4">
+            <p class="label-caps text-ink-muted mb-3">Adresy</p>
+            <div class="space-y-4">
+              <address class="not-italic">
+                <p class="font-display font-semibold text-ink text-sm mb-0.5">Centrum logistyczno-handlowe</p>
+                <p class="text-sm text-ink-muted">ul. Drogowców 7, 32-400 Myślenice</p>
+              </address>
+              <address class="not-italic">
+                <p class="font-display font-semibold text-ink text-sm mb-0.5">Zakład produkcyjny</p>
+                <p class="text-sm text-ink-muted">Polanka 133, 32-400 Myślenice</p>
+              </address>
+            </div>
+          </div>
+
+          <!-- NIP for procurement -->
+          <div class="border-l-2 border-border-subtle pl-4">
+            <p class="label-caps text-ink-muted mb-2">Dane do przetargu</p>
+            <p class="text-sm text-ink font-display font-medium">NIP: 6810004062</p>
+            <p class="text-sm text-ink font-display font-medium">REGON: 351010570</p>
+            <p class="text-sm text-ink font-display font-medium">KRS: 0001208011</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal reveal-d2">
+        <ContactForm client:load />
+      </div>
+    </div>
+  </div>
+</section>

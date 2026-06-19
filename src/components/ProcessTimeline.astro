@@ -1,0 +1,62 @@
+---
+import { processSteps } from '@/data/process';
+
+// Placeholder factory image — swap with real CNC/production photo
+const factoryImage = 'https://images.unsplash.com/photo-1568209865332-a15790aed756?auto=format&fit=crop&w=1200&q=80';
+---
+
+<section id="proces" class="section-pad bg-surface-raised" aria-label="Proces produkcji">
+  <div class="container-site">
+    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <!-- Left: text + timeline -->
+      <div>
+        <p class="reveal label-caps text-beech mb-4">Własna produkcja</p>
+        <h2 class="reveal reveal-d1 display-lg text-ink mb-6">
+          Od surowca<br />do montażu
+        </h2>
+        <p class="reveal reveal-d2 editorial-body text-ink-muted mb-12">
+          Produkcja end-to-end pod jednym dachem w Polance 133 — kontrolujemy każdy etap.
+          Żaden podzleceniodawca, żaden kompromis jakościowy w środku procesu.
+        </p>
+
+        <!-- Timeline steps -->
+        <ol class="relative" aria-label="Etapy produkcji">
+          {processSteps.map((step, i) => (
+            <li class:list={['reveal flex gap-6 pb-10 last:pb-0', `reveal-d${Math.min(i + 1, 4)}`]}>
+              <!-- Line connector -->
+              <div class="flex flex-col items-center">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-cta flex items-center justify-center">
+                  <span class="font-display font-black text-xs text-cta">{step.number}</span>
+                </div>
+                {i < processSteps.length - 1 && (
+                  <div class="flex-1 w-px bg-border-subtle mt-2" aria-hidden="true"></div>
+                )}
+              </div>
+              <!-- Content -->
+              <div class="pt-1.5 pb-2">
+                <h3 class="font-display font-bold text-ink text-base mb-2 tracking-tight">{step.title}</h3>
+                <p class="text-sm text-ink-muted leading-relaxed">{step.description}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <!-- Right: factory image -->
+      <div class="reveal reveal-d2 relative aspect-[3/4] overflow-hidden">
+        <img
+          src={factoryImage}
+          alt="Zakład produkcyjny BOSTA — hala CNC i obróbki metalu w Polance koło Myślenic"
+          class="img-cover"
+          loading="lazy"
+          width="1200"
+          height="1600"
+        />
+        <!-- Caption overlay -->
+        <div class="absolute bottom-0 left-0 right-0 bg-graphite-dark/80 px-6 py-4">
+          <p class="label-caps text-white/60">Zakład produkcyjny — Polanka 133, Myślenice</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

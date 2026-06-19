@@ -1,0 +1,84 @@
+---
+// Placeholder image — swap with real BOSTA hero photo
+const heroImage = 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1920&q=80';
+---
+
+<section
+  id="hero"
+  class="relative min-h-svh flex flex-col justify-end overflow-hidden bg-graphite-dark"
+  aria-label="Sekcja główna"
+>
+  <!-- Background image -->
+  <img
+    src={heroImage}
+    alt="Sala lekcyjna z meblami szkolnymi BOSTA — solidne ławki i krzesła ze sklejki bukowej"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    loading="eager"
+    fetchpriority="high"
+    width="1920"
+    height="1080"
+  />
+
+  <!-- Gradient overlay -->
+  <div
+    class="absolute inset-0"
+    style="background: linear-gradient(to top, oklch(0.14 0.01 250) 0%, oklch(0.14 0.01 250 / 0.6) 50%, oklch(0.14 0.01 250 / 0.2) 100%);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Content -->
+  <div class="relative container-site pb-20 md:pb-28 lg:pb-36 pt-32">
+    <div class="max-w-3xl">
+      <!-- Overline -->
+      <p class="hero-animate hero-animate-d1 label-caps text-white/60 mb-6">
+        Producent mebli — od 1992 roku — Myślenice
+      </p>
+
+      <!-- Headline -->
+      <h1 class="hero-animate hero-animate-d2 display-xl text-white mb-6 lg:mb-8">
+        Meble,<br />które przetrwają<br />pokolenia uczniów
+      </h1>
+
+      <!-- Subhead -->
+      <p class="hero-animate hero-animate-d3 editorial-body text-white/80 mb-10 max-w-xl">
+        Własna produkcja end-to-end: CNC, oklejanie krawędzi, spawalnia, lakiernia proszkowa.
+        Dowozimy i montujemy w całej Polsce.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-animate hero-animate-d3 flex flex-wrap gap-4">
+        <a
+          href="#kontakt"
+          class="inline-flex items-center h-14 px-8 bg-cta text-white font-display font-semibold text-base tracking-tight hover:bg-cta-hover transition-colors"
+        >
+          Zapytaj o wycenę
+        </a>
+        <a
+          href="#produkty"
+          class="inline-flex items-center h-14 px-8 border border-white/50 text-white font-display font-semibold text-base tracking-tight hover:bg-white/10 transition-colors"
+        >
+          Zobacz produkty
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" aria-hidden="true">
+    <span class="label-caps text-white/40">Przewiń</span>
+    <svg class="w-4 h-6 text-white/40 animate-bounce" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M8 4v16M4 16l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</section>
+
+<script>
+  // Trigger hero load animation
+  window.addEventListener('load', () => {
+    document.getElementById('hero')?.classList.add('hero-loaded');
+  });
+  // Fallback if already loaded
+  if (document.readyState === 'complete') {
+    document.getElementById('hero')?.classList.add('hero-loaded');
+  }
+</script>

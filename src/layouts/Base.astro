@@ -1,0 +1,119 @@
+---
+import '../styles/global.css';
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource/spectral/400.css';
+import '@fontsource/spectral/400-italic.css';
+import '@fontsource/spectral/600.css';
+import '@fontsource/spectral/700.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = 'BOSTA — Producent Mebli Szkolnych i Biurowych',
+  description = 'BOSTA produkuje trwałe meble szkolne, przedszkolne i biurowe od 1992 roku. Własny zakład CNC, lakiernia proszkowa, transport i montaż w całej Polsce.',
+  image = '/og-image.jpg',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const jsonLD = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'LocalBusiness'],
+  name: 'BOSTA Producent Mebli Szkolnych i Biurowych Sp. z o.o.',
+  url: 'https://bosta.pl',
+  logo: 'https://bosta.pl/logo.svg',
+  description,
+  foundingDate: '1992',
+  vatID: '6810004062',
+  address: [
+    {
+      '@type': 'PostalAddress',
+      streetAddress: 'ul. Drogowców 7',
+      addressLocality: 'Myślenice',
+      postalCode: '32-400',
+      addressCountry: 'PL',
+      name: 'Centrum logistyczno-handlowe',
+    },
+    {
+      '@type': 'PostalAddress',
+      streetAddress: 'Polanka 133',
+      addressLocality: 'Myślenice',
+      postalCode: '32-400',
+      addressCountry: 'PL',
+      name: 'Zakład produkcyjny',
+    },
+  ],
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '06:00',
+    closes: '15:00',
+  },
+  sameAs: [],
+};
+---
+
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href={canonicalURL} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="BOSTA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLD)} />
+
+    <!-- JS feature detection (before body paint) -->
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+
+  </head>
+  <body>
+    <slot />
+
+    <!-- Smooth scroll -->
+    <script>
+      import Lenis from 'lenis';
+      const motionOK = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (motionOK) {
+        const lenis = new Lenis({ duration: 1.1, easing: (t: number) => 1 - Math.pow(1 - t, 4) });
+        function raf(time: number) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+      }
+    </script>
+
+    <!-- Scroll reveal -->
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

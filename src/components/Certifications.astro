@@ -1,0 +1,39 @@
+---
+import { certifications } from '@/data/certs';
+---
+
+<section id="certyfikaty" class="section-pad bg-canvas border-t border-border-subtle" aria-label="Certyfikaty i normy">
+  <div class="container-site">
+    <div class="max-w-xl mb-14">
+      <p class="reveal label-caps text-beech mb-4">Zgodność i atestacja</p>
+      <h2 class="reveal reveal-d1 display-lg text-ink mb-5">
+        Certyfikaty<br />i normy
+      </h2>
+      <p class="reveal reveal-d2 editorial-body text-ink-muted">
+        W zamówieniach publicznych dokumentacja normatywna decyduje o przetargu.
+        Nasze produkty przechodzą pełną ścieżkę certyfikacji — bez skrótów.
+      </p>
+    </div>
+
+    <!-- Cert cards -->
+    <div class="grid md:grid-cols-3 gap-px bg-border-subtle border border-border-subtle">
+      {certifications.map((cert, i) => (
+        <article class:list={['reveal bg-canvas p-8 lg:p-10', `reveal-d${i + 1}`]}>
+          <!-- Cert badge -->
+          <div class="inline-block mb-6">
+            <div class="border border-cta px-3 py-1.5">
+              <span class="font-display font-bold text-xs text-cta tracking-widest uppercase">{cert.code}</span>
+            </div>
+          </div>
+          <h3 class="font-display font-bold text-ink text-base mb-3 tracking-tight leading-snug">{cert.title}</h3>
+          <p class="text-sm text-ink-muted leading-relaxed">{cert.description}</p>
+        </article>
+      ))}
+    </div>
+
+    <!-- Additional note -->
+    <p class="reveal mt-8 text-sm text-ink-muted max-w-2xl">
+      Pełna dokumentacja — karty produktów, deklaracje zgodności, atesty higieniczne — dostępna na życzenie przy zapytaniu ofertowym lub przetargu publicznym.
+    </p>
+  </div>
+</section>
