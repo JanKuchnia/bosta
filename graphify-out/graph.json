@@ -1,0 +1,5658 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "bosta_wcag_issues_triad",
+        "label": "Three WCAG Audit Issues Requiring Action",
+        "nodes": [
+          "bosta_ink_muted_contrast_issue",
+          "bosta_lightbox_a11y_issue",
+          "bosta_hamburger_touch_target_issue"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "AUDIT.md"
+      },
+      {
+        "id": "bosta_manufacturing_credibility_trio",
+        "label": "Manufacturing Credibility Core: Process + Certifications + Durability",
+        "nodes": [
+          "bosta_manufacturing_process",
+          "bosta_certifications",
+          "bosta_durability_thesis"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "PLAN.md"
+      },
+      {
+        "id": "bosta_design_system_foundations",
+        "label": "Design System Foundations: Color + Typography + Motion",
+        "nodes": [
+          "bosta_color_token_system",
+          "bosta_fluid_typography",
+          "bosta_animation_system"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "AUDIT_PATTERNS.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": ".mcp.json",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "id": "mcp_json",
+      "community": 14,
+      "norm_label": ".mcp.json"
+    },
+    {
+      "label": "mcpServers",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L2",
+      "id": "bosta_mcp_mcpservers",
+      "community": 14,
+      "norm_label": "mcpservers"
+    },
+    {
+      "label": "shadcn",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L3",
+      "id": "bosta_mcp_mcpservers_shadcn",
+      "community": 14,
+      "norm_label": "shadcn"
+    },
+    {
+      "label": "command",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L4",
+      "id": "bosta_mcp_shadcn_command",
+      "community": 14,
+      "norm_label": "command"
+    },
+    {
+      "label": "args",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L5",
+      "id": "bosta_mcp_shadcn_args",
+      "community": 14,
+      "norm_label": "args"
+    },
+    {
+      "label": "components.json",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L1",
+      "id": "components_json",
+      "community": 5,
+      "norm_label": "components.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L2",
+      "id": "bosta_components_schema",
+      "community": 5,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "style",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L3",
+      "id": "bosta_components_style",
+      "community": 5,
+      "norm_label": "style"
+    },
+    {
+      "label": "rsc",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L4",
+      "id": "bosta_components_rsc",
+      "community": 5,
+      "norm_label": "rsc"
+    },
+    {
+      "label": "tsx",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L5",
+      "id": "bosta_components_tsx",
+      "community": 5,
+      "norm_label": "tsx"
+    },
+    {
+      "label": "tailwind",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L6",
+      "id": "bosta_components_tailwind",
+      "community": 5,
+      "norm_label": "tailwind"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L7",
+      "id": "bosta_components_tailwind_config",
+      "community": 5,
+      "norm_label": "config"
+    },
+    {
+      "label": "css",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L8",
+      "id": "bosta_components_tailwind_css",
+      "community": 5,
+      "norm_label": "css"
+    },
+    {
+      "label": "baseColor",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L9",
+      "id": "bosta_components_tailwind_basecolor",
+      "community": 5,
+      "norm_label": "basecolor"
+    },
+    {
+      "label": "cssVariables",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L10",
+      "id": "bosta_components_tailwind_cssvariables",
+      "community": 5,
+      "norm_label": "cssvariables"
+    },
+    {
+      "label": "prefix",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L11",
+      "id": "bosta_components_tailwind_prefix",
+      "community": 5,
+      "norm_label": "prefix"
+    },
+    {
+      "label": "aliases",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L13",
+      "id": "bosta_components_aliases",
+      "community": 5,
+      "norm_label": "aliases"
+    },
+    {
+      "label": "components",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L14",
+      "id": "bosta_components_aliases_components",
+      "community": 5,
+      "norm_label": "components"
+    },
+    {
+      "label": "utils",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L15",
+      "id": "bosta_components_aliases_utils",
+      "community": 5,
+      "norm_label": "utils"
+    },
+    {
+      "label": "ui",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L16",
+      "id": "bosta_components_aliases_ui",
+      "community": 5,
+      "norm_label": "ui"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L17",
+      "id": "bosta_components_aliases_lib",
+      "community": 5,
+      "norm_label": "lib"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L18",
+      "id": "bosta_components_aliases_hooks",
+      "community": 5,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "iconLibrary",
+      "file_type": "code",
+      "source_file": "components.json",
+      "source_location": "L20",
+      "id": "bosta_components_iconlibrary",
+      "community": 5,
+      "norm_label": "iconlibrary"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "id": "tsconfig_json",
+      "community": 9,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "id": "bosta_tsconfig_extends",
+      "community": 9,
+      "norm_label": "extends"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "id": "bosta_tsconfig_compileroptions",
+      "community": 9,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "baseUrl",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "id": "bosta_tsconfig_compileroptions_baseurl",
+      "community": 9,
+      "norm_label": "baseurl"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "id": "bosta_tsconfig_compileroptions_paths",
+      "community": 9,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "id": "bosta_tsconfig_paths",
+      "community": 9,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "id": "bosta_tsconfig_compileroptions_jsx",
+      "community": 9,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "jsxImportSource",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "id": "bosta_tsconfig_compileroptions_jsximportsource",
+      "community": 9,
+      "norm_label": "jsximportsource"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config_mjs",
+      "community": 20,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 7,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "bosta_package_name",
+      "community": 7,
+      "norm_label": "name"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "bosta_package_type",
+      "community": 7,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "bosta_package_scripts",
+      "community": 7,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "bosta_package_scripts_dev",
+      "community": 7,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "bosta_package_scripts_build",
+      "community": 7,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "bosta_package_scripts_preview",
+      "community": 7,
+      "norm_label": "preview"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "bosta_package_scripts_astro",
+      "community": 7,
+      "norm_label": "astro"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "bosta_package_devdependencies",
+      "community": 7,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "shadcn",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "bosta_package_devdependencies_shadcn",
+      "community": 7,
+      "norm_label": "shadcn"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "bosta_package_dependencies",
+      "community": 3,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@astrojs/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "bosta_package_dependencies_astrojs_react",
+      "community": 3,
+      "norm_label": "@astrojs/react"
+    },
+    {
+      "label": "@astrojs/sitemap",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "bosta_package_dependencies_astrojs_sitemap",
+      "community": 3,
+      "norm_label": "@astrojs/sitemap"
+    },
+    {
+      "label": "@fontsource-variable/bricolage-grotesque",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "bosta_package_dependencies_fontsource_variable_bricolage_grotesque",
+      "community": 3,
+      "norm_label": "@fontsource-variable/bricolage-grotesque"
+    },
+    {
+      "label": "@fontsource/spectral",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "bosta_package_dependencies_fontsource_spectral",
+      "community": 3,
+      "norm_label": "@fontsource/spectral"
+    },
+    {
+      "label": "@radix-ui/react-dropdown-menu",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "bosta_package_dependencies_radix_ui_react_dropdown_menu",
+      "community": 3,
+      "norm_label": "@radix-ui/react-dropdown-menu"
+    },
+    {
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "bosta_package_dependencies_tailwindcss_postcss",
+      "community": 3,
+      "norm_label": "@tailwindcss/postcss"
+    },
+    {
+      "label": "@tailwindcss/vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "bosta_package_dependencies_tailwindcss_vite",
+      "community": 3,
+      "norm_label": "@tailwindcss/vite"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "bosta_package_dependencies_types_react",
+      "community": 3,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "bosta_package_dependencies_types_react_dom",
+      "community": 3,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "bosta_package_dependencies_astro",
+      "community": 3,
+      "norm_label": "astro"
+    },
+    {
+      "label": "class-variance-authority",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "bosta_package_dependencies_class_variance_authority",
+      "community": 3,
+      "norm_label": "class-variance-authority"
+    },
+    {
+      "label": "clsx",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "bosta_package_dependencies_clsx",
+      "community": 1,
+      "norm_label": "clsx"
+    },
+    {
+      "label": "lenis",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "id": "bosta_package_dependencies_lenis",
+      "community": 3,
+      "norm_label": "lenis"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "bosta_package_dependencies_lucide_react",
+      "community": 0,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "bosta_package_dependencies_react",
+      "community": 3,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "id": "bosta_package_dependencies_react_dom",
+      "community": 3,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "sonner",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "id": "bosta_package_dependencies_sonner",
+      "community": 3,
+      "norm_label": "sonner"
+    },
+    {
+      "label": "tailwind-merge",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "id": "bosta_package_dependencies_tailwind_merge",
+      "community": 3,
+      "norm_label": "tailwind-merge"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "bosta_package_dependencies_tailwindcss",
+      "community": 3,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "id": "astro_config_mjs",
+      "community": 21,
+      "norm_label": "astro.config.mjs"
+    },
+    {
+      "label": "settings.local.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L1",
+      "id": "claude_settings_local_json",
+      "community": 15,
+      "norm_label": "settings.local.json"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "id": "claude_settings_local_permissions",
+      "community": 15,
+      "norm_label": "permissions"
+    },
+    {
+      "label": "allow",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "id": "claude_settings_local_permissions_allow",
+      "community": 15,
+      "norm_label": "allow"
+    },
+    {
+      "label": "enableAllProjectMcpServers",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L15",
+      "id": "claude_settings_local_enableallprojectmcpservers",
+      "community": 15,
+      "norm_label": "enableallprojectmcpservers"
+    },
+    {
+      "label": "enabledMcpjsonServers",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L16",
+      "id": "claude_settings_local_enabledmcpjsonservers",
+      "community": 15,
+      "norm_label": "enabledmcpjsonservers"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_ts",
+      "community": 1,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "id": "lib_utils_cn",
+      "community": 1,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "process.ts",
+      "file_type": "code",
+      "source_file": "src/data/process.ts",
+      "source_location": "L1",
+      "id": "src_data_process_ts",
+      "community": 19,
+      "norm_label": "process.ts"
+    },
+    {
+      "label": "ProcessStep",
+      "file_type": "code",
+      "source_file": "src/data/process.ts",
+      "source_location": "L1",
+      "id": "data_process_processstep",
+      "community": 19,
+      "norm_label": "processstep"
+    },
+    {
+      "label": "processSteps",
+      "file_type": "code",
+      "source_file": "src/data/process.ts",
+      "source_location": "L7",
+      "id": "data_process_processsteps",
+      "community": 19,
+      "norm_label": "processsteps"
+    },
+    {
+      "label": "certs.ts",
+      "file_type": "code",
+      "source_file": "src/data/certs.ts",
+      "source_location": "L1",
+      "id": "src_data_certs_ts",
+      "community": 17,
+      "norm_label": "certs.ts"
+    },
+    {
+      "label": "Certification",
+      "file_type": "code",
+      "source_file": "src/data/certs.ts",
+      "source_location": "L1",
+      "id": "data_certs_certification",
+      "community": 17,
+      "norm_label": "certification"
+    },
+    {
+      "label": "certifications",
+      "file_type": "code",
+      "source_file": "src/data/certs.ts",
+      "source_location": "L7",
+      "id": "data_certs_certifications",
+      "community": 17,
+      "norm_label": "certifications"
+    },
+    {
+      "label": "products.ts",
+      "file_type": "code",
+      "source_file": "src/data/products.ts",
+      "source_location": "L1",
+      "id": "src_data_products_ts",
+      "community": 18,
+      "norm_label": "products.ts"
+    },
+    {
+      "label": "ProductSegment",
+      "file_type": "code",
+      "source_file": "src/data/products.ts",
+      "source_location": "L1",
+      "id": "data_products_productsegment",
+      "community": 18,
+      "norm_label": "productsegment"
+    },
+    {
+      "label": "products",
+      "file_type": "code",
+      "source_file": "src/data/products.ts",
+      "source_location": "L13",
+      "id": "data_products_products",
+      "community": 18,
+      "norm_label": "products"
+    },
+    {
+      "label": "@/layouts/Base.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L1",
+      "confidence": "EXTRACTED",
+      "id": "src_layouts_base_astro",
+      "community": 0,
+      "norm_label": "@/layouts/base.astro"
+    },
+    {
+      "label": "canonicalURL",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L21",
+      "id": "layouts_base_canonicalurl",
+      "community": 0,
+      "norm_label": "canonicalurl"
+    },
+    {
+      "label": "jsonLD",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L23",
+      "id": "layouts_base_jsonld",
+      "community": 0,
+      "norm_label": "jsonld"
+    },
+    {
+      "label": "../styles/global.css",
+      "file_type": "code",
+      "source_file": "src/styles/global.css",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_styles_global_css",
+      "community": 0,
+      "norm_label": "../styles/global.css"
+    },
+    {
+      "label": "@fontsource-variable/bricolage-grotesque",
+      "file_type": "code",
+      "source_file": "@fontsource-variable/bricolage-grotesque",
+      "confidence": "EXTRACTED",
+      "id": "bricolage_grotesque",
+      "community": 0,
+      "norm_label": "@fontsource-variable/bricolage-grotesque"
+    },
+    {
+      "label": "@fontsource/spectral/400.css",
+      "file_type": "code",
+      "source_file": "@fontsource/spectral/400.css",
+      "confidence": "EXTRACTED",
+      "id": "400_css",
+      "community": 0,
+      "norm_label": "@fontsource/spectral/400.css"
+    },
+    {
+      "label": "@fontsource/spectral/400-italic.css",
+      "file_type": "code",
+      "source_file": "@fontsource/spectral/400-italic.css",
+      "confidence": "EXTRACTED",
+      "id": "400_italic_css",
+      "community": 0,
+      "norm_label": "@fontsource/spectral/400-italic.css"
+    },
+    {
+      "label": "@fontsource/spectral/600.css",
+      "file_type": "code",
+      "source_file": "@fontsource/spectral/600.css",
+      "confidence": "EXTRACTED",
+      "id": "600_css",
+      "community": 0,
+      "norm_label": "@fontsource/spectral/600.css"
+    },
+    {
+      "label": "@fontsource/spectral/700.css",
+      "file_type": "code",
+      "source_file": "@fontsource/spectral/700.css",
+      "confidence": "EXTRACTED",
+      "id": "700_css",
+      "community": 0,
+      "norm_label": "@fontsource/spectral/700.css"
+    },
+    {
+      "label": "lenis",
+      "file_type": "code",
+      "source_file": "lenis",
+      "confidence": "EXTRACTED",
+      "id": "lenis",
+      "community": 3,
+      "norm_label": "lenis"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L1",
+      "id": "src_pages_index_astro",
+      "community": 0,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "Nav.astro",
+      "file_type": "code",
+      "source_file": "src/components/Nav.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_nav_astro",
+      "community": 0,
+      "norm_label": "nav.astro"
+    },
+    {
+      "label": "Hero.astro",
+      "file_type": "code",
+      "source_file": "src/components/Hero.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_hero_astro",
+      "community": 0,
+      "norm_label": "hero.astro"
+    },
+    {
+      "label": "Lead.astro",
+      "file_type": "code",
+      "source_file": "src/components/Lead.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_lead_astro",
+      "community": 0,
+      "norm_label": "lead.astro"
+    },
+    {
+      "label": "ProductSegments.astro",
+      "file_type": "code",
+      "source_file": "src/components/ProductSegments.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_productsegments_astro",
+      "community": 0,
+      "norm_label": "productsegments.astro"
+    },
+    {
+      "label": "Durability.astro",
+      "file_type": "code",
+      "source_file": "src/components/Durability.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_durability_astro",
+      "community": 0,
+      "norm_label": "durability.astro"
+    },
+    {
+      "label": "ProcessTimeline.astro",
+      "file_type": "code",
+      "source_file": "src/components/ProcessTimeline.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_processtimeline_astro",
+      "community": 0,
+      "norm_label": "processtimeline.astro"
+    },
+    {
+      "label": "Certifications.astro",
+      "file_type": "code",
+      "source_file": "src/components/Certifications.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_certifications_astro",
+      "community": 0,
+      "norm_label": "certifications.astro"
+    },
+    {
+      "label": "HowWeWork.astro",
+      "file_type": "code",
+      "source_file": "src/components/HowWeWork.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_howwework_astro",
+      "community": 0,
+      "norm_label": "howwework.astro"
+    },
+    {
+      "label": "About.astro",
+      "file_type": "code",
+      "source_file": "src/components/About.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_about_astro",
+      "community": 0,
+      "norm_label": "about.astro"
+    },
+    {
+      "label": "ContactSection.astro",
+      "file_type": "code",
+      "source_file": "src/components/ContactSection.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_contactsection_astro",
+      "community": 0,
+      "norm_label": "contactsection.astro"
+    },
+    {
+      "label": "Footer.astro",
+      "file_type": "code",
+      "source_file": "src/components/Footer.astro",
+      "confidence": "EXTRACTED",
+      "source_location": "L1",
+      "id": "src_components_footer_astro",
+      "community": 0,
+      "norm_label": "footer.astro"
+    },
+    {
+      "label": "@/components/Lightbox",
+      "file_type": "code",
+      "source_file": "src/components/Lightbox",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_components_lightbox",
+      "community": 0,
+      "norm_label": "@/components/lightbox"
+    },
+    {
+      "label": "@/data/certs",
+      "file_type": "code",
+      "source_file": "src/data/certs",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_data_certs",
+      "community": 0,
+      "norm_label": "@/data/certs"
+    },
+    {
+      "label": "Lightbox.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Lightbox.tsx",
+      "source_location": "L1",
+      "id": "src_components_lightbox_tsx",
+      "community": 0,
+      "norm_label": "lightbox.tsx"
+    },
+    {
+      "label": "LightboxImage",
+      "file_type": "code",
+      "source_file": "src/components/Lightbox.tsx",
+      "source_location": "L3",
+      "id": "components_lightbox_lightboximage",
+      "community": 0,
+      "norm_label": "lightboximage"
+    },
+    {
+      "label": "Lightbox()",
+      "file_type": "code",
+      "source_file": "src/components/Lightbox.tsx",
+      "source_location": "L8",
+      "id": "components_lightbox_lightbox",
+      "community": 0,
+      "norm_label": "lightbox()"
+    },
+    {
+      "label": "@/data/products",
+      "file_type": "code",
+      "source_file": "src/data/products",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_data_products",
+      "community": 0,
+      "norm_label": "@/data/products"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "lucide-react",
+      "confidence": "EXTRACTED",
+      "id": "lucide_react",
+      "community": 0,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "./ContactForm",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_components_contactform",
+      "community": 0,
+      "norm_label": "./contactform"
+    },
+    {
+      "label": "steps",
+      "file_type": "code",
+      "source_file": "src/components/HowWeWork.astro",
+      "source_location": "L4",
+      "id": "components_howwework_steps",
+      "community": 0,
+      "norm_label": "steps"
+    },
+    {
+      "label": "ContactForm.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L1",
+      "id": "src_components_contactform_tsx",
+      "community": 1,
+      "norm_label": "contactform.tsx"
+    },
+    {
+      "label": "FormState",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L13",
+      "id": "components_contactform_formstate",
+      "community": 1,
+      "norm_label": "formstate"
+    },
+    {
+      "label": "emptyForm",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L21",
+      "id": "components_contactform_emptyform",
+      "community": 1,
+      "norm_label": "emptyform"
+    },
+    {
+      "label": "Field()",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L23",
+      "id": "components_contactform_field",
+      "community": 1,
+      "norm_label": "field()"
+    },
+    {
+      "label": "ContactForm()",
+      "file_type": "code",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L38",
+      "id": "components_contactform_contactform",
+      "community": 1,
+      "norm_label": "contactform()"
+    },
+    {
+      "label": "./MobileNav.tsx",
+      "file_type": "code",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L1",
+      "confidence": "EXTRACTED",
+      "id": "src_components_mobilenav_tsx",
+      "community": 0,
+      "norm_label": "./mobilenav.tsx"
+    },
+    {
+      "label": "navLinks",
+      "file_type": "code",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L5",
+      "id": "components_mobilenav_navlinks",
+      "community": 0,
+      "norm_label": "navlinks"
+    },
+    {
+      "label": "MobileNav()",
+      "file_type": "code",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L13",
+      "id": "components_mobilenav_mobilenav",
+      "community": 0,
+      "norm_label": "mobilenav()"
+    },
+    {
+      "label": "year",
+      "file_type": "code",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L4",
+      "id": "components_footer_year",
+      "community": 0,
+      "norm_label": "year"
+    },
+    {
+      "label": "navLinks",
+      "file_type": "code",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L6",
+      "id": "components_footer_navlinks",
+      "community": 0,
+      "norm_label": "navlinks"
+    },
+    {
+      "label": "@/data/process",
+      "file_type": "code",
+      "source_file": "src/data/process",
+      "confidence": "EXTRACTED",
+      "id": "home_jankuchnia_desktop_bosta_src_data_process",
+      "community": 0,
+      "norm_label": "@/data/process"
+    },
+    {
+      "label": "navLinks",
+      "file_type": "code",
+      "source_file": "src/components/Nav.astro",
+      "source_location": "L5",
+      "id": "components_nav_navlinks",
+      "community": 0,
+      "norm_label": "navlinks"
+    },
+    {
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_input_tsx",
+      "community": 1,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "InputProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L4",
+      "id": "ui_input_inputprops",
+      "community": 1,
+      "norm_label": "inputprops"
+    },
+    {
+      "label": "Input",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L6",
+      "id": "ui_input_input",
+      "community": 1,
+      "norm_label": "input"
+    },
+    {
+      "label": "textarea.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_textarea_tsx",
+      "community": 1,
+      "norm_label": "textarea.tsx"
+    },
+    {
+      "label": "TextareaProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "id": "ui_textarea_textareaprops",
+      "community": 1,
+      "norm_label": "textareaprops"
+    },
+    {
+      "label": "Textarea",
+      "file_type": "code",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L6",
+      "id": "ui_textarea_textarea",
+      "community": 1,
+      "norm_label": "textarea"
+    },
+    {
+      "label": "label.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_label_tsx",
+      "community": 1,
+      "norm_label": "label.tsx"
+    },
+    {
+      "label": "LabelProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L4",
+      "id": "ui_label_labelprops",
+      "community": 1,
+      "norm_label": "labelprops"
+    },
+    {
+      "label": "Label",
+      "file_type": "code",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L6",
+      "id": "ui_label_label",
+      "community": 1,
+      "norm_label": "label"
+    },
+    {
+      "label": "dropdown-menu.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_dropdown_menu_tsx",
+      "community": 1,
+      "norm_label": "dropdown-menu.tsx"
+    },
+    {
+      "label": "DropdownMenuSubTrigger",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L19",
+      "id": "ui_dropdown_menu_dropdownmenusubtrigger",
+      "community": 1,
+      "norm_label": "dropdownmenusubtrigger"
+    },
+    {
+      "label": "DropdownMenuSubContent",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L41",
+      "id": "ui_dropdown_menu_dropdownmenusubcontent",
+      "community": 1,
+      "norm_label": "dropdownmenusubcontent"
+    },
+    {
+      "label": "DropdownMenuContent",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L57",
+      "id": "ui_dropdown_menu_dropdownmenucontent",
+      "community": 1,
+      "norm_label": "dropdownmenucontent"
+    },
+    {
+      "label": "DropdownMenuItem",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L75",
+      "id": "ui_dropdown_menu_dropdownmenuitem",
+      "community": 1,
+      "norm_label": "dropdownmenuitem"
+    },
+    {
+      "label": "DropdownMenuCheckboxItem",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L93",
+      "id": "ui_dropdown_menu_dropdownmenucheckboxitem",
+      "community": 1,
+      "norm_label": "dropdownmenucheckboxitem"
+    },
+    {
+      "label": "DropdownMenuRadioItem",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L117",
+      "id": "ui_dropdown_menu_dropdownmenuradioitem",
+      "community": 1,
+      "norm_label": "dropdownmenuradioitem"
+    },
+    {
+      "label": "DropdownMenuLabel",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L139",
+      "id": "ui_dropdown_menu_dropdownmenulabel",
+      "community": 1,
+      "norm_label": "dropdownmenulabel"
+    },
+    {
+      "label": "DropdownMenuSeparator",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L157",
+      "id": "ui_dropdown_menu_dropdownmenuseparator",
+      "community": 1,
+      "norm_label": "dropdownmenuseparator"
+    },
+    {
+      "label": "DropdownMenuShortcut()",
+      "file_type": "code",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L169",
+      "id": "ui_dropdown_menu_dropdownmenushortcut",
+      "community": 1,
+      "norm_label": "dropdownmenushortcut()"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_button_tsx",
+      "community": 1,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "buttonVariants",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L5",
+      "id": "ui_button_buttonvariants",
+      "community": 1,
+      "norm_label": "buttonvariants"
+    },
+    {
+      "label": "ButtonProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L28",
+      "id": "ui_button_buttonprops",
+      "community": 1,
+      "norm_label": "buttonprops"
+    },
+    {
+      "label": "Button",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L32",
+      "id": "ui_button_button",
+      "community": 1,
+      "norm_label": "button"
+    },
+    {
+      "label": "content.d.ts",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L1",
+      "id": "astro_content_d_ts",
+      "community": 2,
+      "norm_label": "content.d.ts"
+    },
+    {
+      "label": "RenderResult",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L2",
+      "id": "astro_content_d_renderresult",
+      "community": 2,
+      "norm_label": "renderresult"
+    },
+    {
+      "label": "Render",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L7",
+      "id": "astro_content_d_render",
+      "community": 2,
+      "norm_label": "render"
+    },
+    {
+      "label": "RenderedContent",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L11",
+      "id": "astro_content_d_renderedcontent",
+      "community": 2,
+      "norm_label": "renderedcontent"
+    },
+    {
+      "label": "Flatten",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L19",
+      "id": "astro_content_d_flatten",
+      "community": 2,
+      "norm_label": "flatten"
+    },
+    {
+      "label": "CollectionKey",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L21",
+      "id": "astro_content_d_collectionkey",
+      "community": 2,
+      "norm_label": "collectionkey"
+    },
+    {
+      "label": "CollectionEntry",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L22",
+      "id": "astro_content_d_collectionentry",
+      "community": 2,
+      "norm_label": "collectionentry"
+    },
+    {
+      "label": "AllValuesOf",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L24",
+      "id": "astro_content_d_allvaluesof",
+      "community": 2,
+      "norm_label": "allvaluesof"
+    },
+    {
+      "label": "ReferenceDataEntry",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L26",
+      "id": "astro_content_d_referencedataentry",
+      "community": 2,
+      "norm_label": "referencedataentry"
+    },
+    {
+      "label": "ReferenceLiveEntry",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L34",
+      "id": "astro_content_d_referenceliveentry",
+      "community": 2,
+      "norm_label": "referenceliveentry"
+    },
+    {
+      "label": "InferEntrySchema",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L111",
+      "id": "astro_content_d_inferentryschema",
+      "community": 2,
+      "norm_label": "inferentryschema"
+    },
+    {
+      "label": "ExtractLoaderConfig",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L114",
+      "id": "astro_content_d_extractloaderconfig",
+      "community": 2,
+      "norm_label": "extractloaderconfig"
+    },
+    {
+      "label": "InferLoaderSchema",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L115",
+      "id": "astro_content_d_inferloaderschema",
+      "community": 2,
+      "norm_label": "inferloaderschema"
+    },
+    {
+      "label": "DataEntryMap",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L122",
+      "id": "astro_content_d_dataentrymap",
+      "community": 2,
+      "norm_label": "dataentrymap"
+    },
+    {
+      "label": "ExtractLoaderTypes",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L126",
+      "id": "astro_content_d_extractloadertypes",
+      "community": 2,
+      "norm_label": "extractloadertypes"
+    },
+    {
+      "label": "ExtractEntryFilterType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L134",
+      "id": "astro_content_d_extractentryfiltertype",
+      "community": 2,
+      "norm_label": "extractentryfiltertype"
+    },
+    {
+      "label": "ExtractCollectionFilterType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L135",
+      "id": "astro_content_d_extractcollectionfiltertype",
+      "community": 2,
+      "norm_label": "extractcollectionfiltertype"
+    },
+    {
+      "label": "ExtractErrorType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L136",
+      "id": "astro_content_d_extracterrortype",
+      "community": 2,
+      "norm_label": "extracterrortype"
+    },
+    {
+      "label": "ExtractDataType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L137",
+      "id": "astro_content_d_extractdatatype",
+      "community": 2,
+      "norm_label": "extractdatatype"
+    },
+    {
+      "label": "LiveLoaderDataType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L139",
+      "id": "astro_content_d_liveloaderdatatype",
+      "community": 2,
+      "norm_label": "liveloaderdatatype"
+    },
+    {
+      "label": "LiveLoaderEntryFilterType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L145",
+      "id": "astro_content_d_liveloaderentryfiltertype",
+      "community": 2,
+      "norm_label": "liveloaderentryfiltertype"
+    },
+    {
+      "label": "LiveLoaderCollectionFilterType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L147",
+      "id": "astro_content_d_liveloadercollectionfiltertype",
+      "community": 2,
+      "norm_label": "liveloadercollectionfiltertype"
+    },
+    {
+      "label": "LiveLoaderErrorType",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L149",
+      "id": "astro_content_d_liveloadererrortype",
+      "community": 2,
+      "norm_label": "liveloadererrortype"
+    },
+    {
+      "label": "ContentConfig",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L153",
+      "id": "astro_content_d_contentconfig",
+      "community": 2,
+      "norm_label": "contentconfig"
+    },
+    {
+      "label": "LiveContentConfig",
+      "file_type": "code",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L154",
+      "id": "astro_content_d_livecontentconfig",
+      "community": 2,
+      "norm_label": "livecontentconfig"
+    },
+    {
+      "label": "types.d.ts",
+      "file_type": "code",
+      "source_file": ".astro/types.d.ts",
+      "source_location": "L1",
+      "id": "astro_types_d_ts",
+      "community": 22,
+      "norm_label": "types.d.ts"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".astro/settings.json",
+      "source_location": "L1",
+      "id": "astro_settings_json",
+      "community": 16,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "_variables",
+      "file_type": "code",
+      "source_file": ".astro/settings.json",
+      "source_location": "L2",
+      "id": "astro_settings_variables",
+      "community": 16,
+      "norm_label": "_variables"
+    },
+    {
+      "label": "lastUpdateCheck",
+      "file_type": "code",
+      "source_file": ".astro/settings.json",
+      "source_location": "L3",
+      "id": "astro_settings_variables_lastupdatecheck",
+      "community": 16,
+      "norm_label": "lastupdatecheck"
+    },
+    {
+      "label": "BOSTA Landing Site Plan",
+      "file_type": "document",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_plan_landing_site",
+      "community": 4,
+      "norm_label": "bosta landing site plan"
+    },
+    {
+      "label": "BOSTA Product Brief",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_product_brief",
+      "community": 4,
+      "norm_label": "bosta product brief"
+    },
+    {
+      "label": "BOSTA Technical Audit Report (19/20)",
+      "file_type": "document",
+      "source_file": "AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_audit_report",
+      "community": 6,
+      "norm_label": "bosta technical audit report (19/20)"
+    },
+    {
+      "label": "BOSTA Audit Action Plan",
+      "file_type": "document",
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_audit_actions_plan",
+      "community": 6,
+      "norm_label": "bosta audit action plan"
+    },
+    {
+      "label": "BOSTA Design Patterns Reference Guide",
+      "file_type": "document",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_audit_patterns_guide",
+      "community": 6,
+      "norm_label": "bosta design patterns reference guide"
+    },
+    {
+      "label": "BOSTA Company Knowledge Profile (Polish)",
+      "file_type": "document",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_info_company_profile",
+      "community": 4,
+      "norm_label": "bosta company knowledge profile (polish)"
+    },
+    {
+      "label": "GitHub Pages Deploy Workflow",
+      "file_type": "code",
+      "source_file": ".github/workflows/deploy.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "github_deploy_workflow",
+      "community": 4,
+      "norm_label": "github pages deploy workflow"
+    },
+    {
+      "label": "BOSTA Sp. z o.o. (Furniture Manufacturer, est. 1992)",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_company_entity",
+      "community": 4,
+      "norm_label": "bosta sp. z o.o. (furniture manufacturer, est. 1992)"
+    },
+    {
+      "label": "BOSTA Design System (OKLCH tokens, typography, motion)",
+      "file_type": "rationale",
+      "source_file": "PLAN.md",
+      "source_location": "line 25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_design_system",
+      "community": 6,
+      "norm_label": "bosta design system (oklch tokens, typography, motion)"
+    },
+    {
+      "label": "OKLCH Semantic Color Token System",
+      "file_type": "rationale",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 142",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_color_token_system",
+      "community": 6,
+      "norm_label": "oklch semantic color token system"
+    },
+    {
+      "label": "Scroll-Reveal + Staggered Delay Animation System",
+      "file_type": "rationale",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_animation_system",
+      "community": 6,
+      "norm_label": "scroll-reveal + staggered delay animation system"
+    },
+    {
+      "label": "Mobile Hamburger Navigation Component",
+      "file_type": "concept",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 269",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_mobile_nav",
+      "community": 6,
+      "norm_label": "mobile hamburger navigation component"
+    },
+    {
+      "label": "Lightbox Component (Gallery)",
+      "file_type": "concept",
+      "source_file": "AUDIT.md",
+      "source_location": "line 74",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_lightbox_component",
+      "community": 6,
+      "norm_label": "lightbox component (gallery)"
+    },
+    {
+      "label": "Contact Form (React Island, shadcn)",
+      "file_type": "concept",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 79",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_contact_form",
+      "community": 6,
+      "norm_label": "contact form (react island, shadcn)"
+    },
+    {
+      "label": "Hero Section Component",
+      "file_type": "concept",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 340",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_hero_section",
+      "community": 6,
+      "norm_label": "hero section component"
+    },
+    {
+      "label": "Single-Page Structure (11 Sections)",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": "line 52",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_page_structure",
+      "community": 4,
+      "norm_label": "single-page structure (11 sections)"
+    },
+    {
+      "label": "Astro + Tailwind v4 + shadcn/ui + React Stack",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": "line 21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_astro_stack",
+      "community": 4,
+      "norm_label": "astro + tailwind v4 + shadcn/ui + react stack"
+    },
+    {
+      "label": "Polish Institutional B2G Buyers (Target Audience)",
+      "file_type": "concept",
+      "source_file": "PRODUCT.md",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_b2g_buyers",
+      "community": 4,
+      "norm_label": "polish institutional b2g buyers (target audience)"
+    },
+    {
+      "label": "BOSTA Brand Principles (Industrial Precision, Specificity, No Slop)",
+      "file_type": "rationale",
+      "source_file": "PRODUCT.md",
+      "source_location": "line 33",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_brand_principles",
+      "community": 4,
+      "norm_label": "bosta brand principles (industrial precision, specificity, no slop)"
+    },
+    {
+      "label": "End-to-End Manufacturing Process (CNC\u2192Oklejanie\u2192Metal\u2192Lakiernia)",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_manufacturing_process",
+      "community": 4,
+      "norm_label": "end-to-end manufacturing process (cnc\u2192oklejanie\u2192metal\u2192lakiernia)"
+    },
+    {
+      "label": "PN-EN 1729-1:2016 and PN-EN 1729-2+A1:2016 Certifications + E1 Atest",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 63",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_certifications",
+      "community": 4,
+      "norm_label": "pn-en 1729-1:2016 and pn-en 1729-2+a1:2016 certifications + e1 atest"
+    },
+    {
+      "label": "Product Segments: Szkolne, Przedszkolne, Biurowe, Dedykowane",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 42",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_product_segments",
+      "community": 4,
+      "norm_label": "product segments: szkolne, przedszkolne, biurowe, dedykowane"
+    },
+    {
+      "label": "WCAG 2.1 AA Accessibility Requirements",
+      "file_type": "rationale",
+      "source_file": "PRODUCT.md",
+      "source_location": "line 42",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_wcag_accessibility",
+      "community": 6,
+      "norm_label": "wcag 2.1 aa accessibility requirements"
+    },
+    {
+      "label": "ink-muted Contrast Failure P1 (4.2:1 vs 4.5:1 WCAG AA)",
+      "file_type": "concept",
+      "source_file": "AUDIT.md",
+      "source_location": "line 53",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_ink_muted_contrast_issue",
+      "community": 6,
+      "norm_label": "ink-muted contrast failure p1 (4.2:1 vs 4.5:1 wcag aa)"
+    },
+    {
+      "label": "Lightbox Accessibility Gap P2 (Missing focus trap, ARIA)",
+      "file_type": "concept",
+      "source_file": "AUDIT.md",
+      "source_location": "line 74",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_lightbox_a11y_issue",
+      "community": 6,
+      "norm_label": "lightbox accessibility gap p2 (missing focus trap, aria)"
+    },
+    {
+      "label": "Mobile Hamburger Touch Target Below 44px P2",
+      "file_type": "concept",
+      "source_file": "AUDIT.md",
+      "source_location": "line 99",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_hamburger_touch_target_issue",
+      "community": 6,
+      "norm_label": "mobile hamburger touch target below 44px p2"
+    },
+    {
+      "label": "Fluid Typography with clamp() Scale (Bricolage Grotesque + Spectral)",
+      "file_type": "rationale",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 483",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_fluid_typography",
+      "community": 6,
+      "norm_label": "fluid typography with clamp() scale (bricolage grotesque + spectral)"
+    },
+    {
+      "label": "Semantic HTML Landmarks Pattern",
+      "file_type": "rationale",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 411",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_semantic_html",
+      "community": 6,
+      "norm_label": "semantic html landmarks pattern"
+    },
+    {
+      "label": "Responsive Asymmetric Grid System (auto-fit, clamp)",
+      "file_type": "rationale",
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 205",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_responsive_grid",
+      "community": 6,
+      "norm_label": "responsive asymmetric grid system (auto-fit, clamp)"
+    },
+    {
+      "label": "GitHub Pages Static Deployment (jankuchnia.github.io/bosta)",
+      "file_type": "concept",
+      "source_file": ".github/workflows/deploy.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_github_pages_deployment",
+      "community": 4,
+      "norm_label": "github pages static deployment (jankuchnia.github.io/bosta)"
+    },
+    {
+      "label": "Anti-Vandal Durability Engineering Thesis",
+      "file_type": "rationale",
+      "source_file": "PLAN.md",
+      "source_location": "line 68",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_durability_thesis",
+      "community": 4,
+      "norm_label": "anti-vandal durability engineering thesis"
+    },
+    {
+      "label": "Unsplash Placeholder Image Strategy (Swappable Fixed Slots)",
+      "file_type": "rationale",
+      "source_file": "PLAN.md",
+      "source_location": "line 23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_unsplash_placeholders",
+      "community": 4,
+      "norm_label": "unsplash placeholder image strategy (swappable fixed slots)"
+    },
+    {
+      "label": "Company Structure (Zarz\u0105d: Lenart+Bajer, 2 Sites Myslenice)",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 22",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_company_structure",
+      "community": 4,
+      "norm_label": "company structure (zarzad: lenart+bajer, 2 sites myslenice)"
+    },
+    {
+      "label": "B2G Sales Model (Public Tenders, General Contractors, Own Logistics)",
+      "file_type": "concept",
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 64",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_b2g_sales_model",
+      "community": 4,
+      "norm_label": "b2g sales model (public tenders, general contractors, own logistics)"
+    },
+    {
+      "label": "Editorial Showcase Visual Direction (Asymmetric, Photography-Led)",
+      "file_type": "rationale",
+      "source_file": "PLAN.md",
+      "source_location": "line 19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_editorial_showcase",
+      "community": 4,
+      "norm_label": "editorial showcase visual direction (asymmetric, photography-led)"
+    },
+    {
+      "label": "JSON-LD Organization/LocalBusiness SEO Schema",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": "line 104",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_jsonld_seo",
+      "community": 4,
+      "norm_label": "json-ld organization/localbusiness seo schema"
+    },
+    {
+      "label": "Bosta Logo (New)",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_logo",
+      "community": 8,
+      "norm_label": "bosta logo (new)"
+    },
+    {
+      "label": "Bosta Wordmark Text",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_wordmark",
+      "community": 8,
+      "norm_label": "bosta wordmark text"
+    },
+    {
+      "label": "Bosta Icon / Monogram Mark",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_icon_mark",
+      "community": 8,
+      "norm_label": "bosta icon / monogram mark"
+    },
+    {
+      "label": "Gold Gradient Fill Style",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_gold_gradient",
+      "community": 8,
+      "norm_label": "gold gradient fill style"
+    },
+    {
+      "label": "Dark Near-Black Text Color (#090102)",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_dark_text_color",
+      "community": 8,
+      "norm_label": "dark near-black text color (#090102)"
+    },
+    {
+      "label": "Diagonal Stripe Hatching Effect",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_diagonal_stripe_effect",
+      "community": 8,
+      "norm_label": "diagonal stripe hatching effect"
+    },
+    {
+      "label": "Bosta Brand Identity",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_brand_identity",
+      "community": 8,
+      "norm_label": "bosta brand identity"
+    },
+    {
+      "label": "Producer / Subtitle Tagline Text",
+      "file_type": "concept",
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_bosta-logo-new_tagline_text",
+      "community": 8,
+      "norm_label": "producer / subtitle tagline text"
+    },
+    {
+      "label": "Bosta App Icon",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_app_icon",
+      "community": 13,
+      "norm_label": "bosta app icon"
+    },
+    {
+      "label": "Bosta Brand Logo",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_brand_logo",
+      "community": 13,
+      "norm_label": "bosta brand logo"
+    },
+    {
+      "label": "Letter B Letterform",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_letter_b",
+      "community": 13,
+      "norm_label": "letter b letterform"
+    },
+    {
+      "label": "Red Color (#E8000F approx)",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_color_red",
+      "community": 13,
+      "norm_label": "red color (#e8000f approx)"
+    },
+    {
+      "label": "White Color",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_color_white",
+      "community": 13,
+      "norm_label": "white color"
+    },
+    {
+      "label": "Circular Shape Background",
+      "file_type": "image",
+      "source_file": "icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bosta_icon_shape_circle",
+      "community": 13,
+      "norm_label": "circular shape background"
+    },
+    {
+      "label": "Favicon SVG",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_svg",
+      "community": 11,
+      "norm_label": "favicon svg"
+    },
+    {
+      "label": "Letter B (favicon glyph)",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_letter_b",
+      "community": 11,
+      "norm_label": "letter b (favicon glyph)"
+    },
+    {
+      "label": "Dark Background Rectangle",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_background_rect",
+      "community": 11,
+      "norm_label": "dark background rectangle"
+    },
+    {
+      "label": "Bosta Brand Identity",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_brand_bosta",
+      "community": 11,
+      "norm_label": "bosta brand identity"
+    },
+    {
+      "label": "Dark Navy Color (oklch 0.14 0.01 250)",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_color_dark_navy",
+      "community": 11,
+      "norm_label": "dark navy color (oklch 0.14 0.01 250)"
+    },
+    {
+      "label": "White Text Color",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_color_white",
+      "community": 11,
+      "norm_label": "white text color"
+    },
+    {
+      "label": "Browser Tab Icon",
+      "file_type": "concept",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_favicon_browser_icon",
+      "community": 11,
+      "norm_label": "browser tab icon"
+    },
+    {
+      "label": "Bosta Logo New SVG",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_svg",
+      "community": 10,
+      "norm_label": "bosta logo new svg"
+    },
+    {
+      "label": "Bosta Brand Identity",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_brand_identity",
+      "community": 10,
+      "norm_label": "bosta brand identity"
+    },
+    {
+      "label": "Bosta Wordmark Typography",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_wordmark",
+      "community": 10,
+      "norm_label": "bosta wordmark typography"
+    },
+    {
+      "label": "Bosta Monogram Icon",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_monogram",
+      "community": 10,
+      "norm_label": "bosta monogram icon"
+    },
+    {
+      "label": "Gold Gradient Color Scheme",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_gold_gradient",
+      "community": 10,
+      "norm_label": "gold gradient color scheme"
+    },
+    {
+      "label": "Dark Near-Black Text Color",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_dark_text",
+      "community": 10,
+      "norm_label": "dark near-black text color"
+    },
+    {
+      "label": "Diagonal Stroke Visual Effect",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_diagonal_stroke",
+      "community": 10,
+      "norm_label": "diagonal stroke visual effect"
+    },
+    {
+      "label": "Serif Typography Style",
+      "file_type": "concept",
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_bosta_logo_new_serif_font",
+      "community": 10,
+      "norm_label": "serif typography style"
+    },
+    {
+      "label": "icon.png",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_png",
+      "community": 12,
+      "norm_label": "icon.png"
+    },
+    {
+      "label": "Brand Icon",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_brand_icon",
+      "community": 12,
+      "norm_label": "brand icon"
+    },
+    {
+      "label": "Lettermark B",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_lettermark_b",
+      "community": 12,
+      "norm_label": "lettermark b"
+    },
+    {
+      "label": "Red Color",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_color_red",
+      "community": 12,
+      "norm_label": "red color"
+    },
+    {
+      "label": "White Color",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_color_white",
+      "community": 12,
+      "norm_label": "white color"
+    },
+    {
+      "label": "Circular Shape",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_circular_shape",
+      "community": 12,
+      "norm_label": "circular shape"
+    },
+    {
+      "label": "Favicon / App Icon",
+      "file_type": "image",
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_icon_favicon",
+      "community": 12,
+      "norm_label": "favicon / app icon"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".mcp.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "mcp_json",
+      "target": "bosta_mcp_mcpservers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".mcp.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "bosta_mcp_mcpservers",
+      "target": "bosta_mcp_mcpservers_shadcn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".mcp.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bosta_mcp_mcpservers_shadcn",
+      "target": "bosta_mcp_shadcn_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".mcp.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bosta_mcp_mcpservers_shadcn",
+      "target": "bosta_mcp_shadcn_args",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_rsc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_tailwind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_aliases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "components_json",
+      "target": "bosta_components_iconlibrary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "bosta_components_tailwind",
+      "target": "bosta_components_tailwind_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "bosta_components_tailwind",
+      "target": "bosta_components_tailwind_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "bosta_components_tailwind",
+      "target": "bosta_components_tailwind_basecolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "bosta_components_tailwind",
+      "target": "bosta_components_tailwind_cssvariables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bosta_components_tailwind",
+      "target": "bosta_components_tailwind_prefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "bosta_components_aliases",
+      "target": "bosta_components_aliases_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "bosta_components_aliases",
+      "target": "bosta_components_aliases_utils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "bosta_components_aliases",
+      "target": "bosta_components_aliases_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "bosta_components_aliases",
+      "target": "bosta_components_aliases_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "bosta_components_aliases",
+      "target": "bosta_components_aliases_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "bosta_tsconfig_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "bosta_tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bosta_tsconfig_compileroptions",
+      "target": "bosta_tsconfig_compileroptions_baseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bosta_tsconfig_compileroptions",
+      "target": "bosta_tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "bosta_tsconfig_compileroptions",
+      "target": "bosta_tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "bosta_tsconfig_compileroptions",
+      "target": "bosta_tsconfig_compileroptions_jsximportsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bosta_tsconfig_compileroptions_paths",
+      "target": "bosta_tsconfig_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "bosta_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "bosta_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "bosta_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "bosta_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "bosta_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bosta_package_scripts",
+      "target": "bosta_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bosta_package_scripts",
+      "target": "bosta_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "bosta_package_scripts",
+      "target": "bosta_package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "bosta_package_scripts",
+      "target": "bosta_package_scripts_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bosta_package_devdependencies",
+      "target": "bosta_package_devdependencies_shadcn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_astrojs_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_astrojs_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_fontsource_variable_bricolage_grotesque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_fontsource_spectral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_radix_ui_react_dropdown_menu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_tailwindcss_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_tailwindcss_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_class_variance_authority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_clsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_lenis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_sonner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_tailwind_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "bosta_package_dependencies",
+      "target": "bosta_package_dependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_utils_cn",
+      "target": "bosta_package_dependencies_clsx"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import",
+      "source": "bosta_package_dependencies_lenis",
+      "target": "lenis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import",
+      "source": "bosta_package_dependencies_lucide_react",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings_local_json",
+      "target": "claude_settings_local_permissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_settings_local_json",
+      "target": "claude_settings_local_enableallprojectmcpservers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "claude_settings_local_json",
+      "target": "claude_settings_local_enabledmcpjsonservers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_local_permissions",
+      "target": "claude_settings_local_permissions_allow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_utils_ts",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_label_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_label_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "ui_dropdown_menu_dropdownmenushortcut",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/process.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_process_ts",
+      "target": "data_process_processstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/process.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_data_process_ts",
+      "target": "data_process_processsteps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/certs.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_certs_ts",
+      "target": "data_certs_certification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/certs.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_data_certs_ts",
+      "target": "data_certs_certifications",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/products.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_products_ts",
+      "target": "data_products_productsegment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/products.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_data_products_ts",
+      "target": "data_products_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "bricolage_grotesque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "400_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "400_italic_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "600_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "700_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "layouts_base_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_layouts_base_astro",
+      "target": "layouts_base_jsonld",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source": "src_layouts_base_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_styles_global_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source": "src_layouts_base_astro",
+      "target": "lenis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source": "src_pages_index_astro",
+      "target": "src_layouts_base_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_nav_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_hero_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_lead_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_productsegments_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_durability_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_processtimeline_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_certifications_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_howwework_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_about_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_contactsection_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_footer_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "src_components_lightbox_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source": "src_pages_index_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_components_lightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Nav.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_nav_astro",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Nav.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_nav_astro",
+      "target": "components_nav_navlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Nav.astro",
+      "source": "src_components_nav_astro",
+      "target": "src_components_mobilenav_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source": "src_components_hero_astro",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ProductSegments.astro",
+      "source": "src_components_productsegments_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_data_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ProcessTimeline.astro",
+      "source": "src_components_processtimeline_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_data_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Certifications.astro",
+      "source": "src_components_certifications_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_data_certs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HowWeWork.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_howwework_astro",
+      "target": "components_howwework_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HowWeWork.astro",
+      "source": "src_components_howwework_astro",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactSection.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_contactsection_astro",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactSection.astro",
+      "source": "src_components_contactsection_astro",
+      "target": "home_jankuchnia_desktop_bosta_src_components_contactform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_footer_astro",
+      "target": "components_footer_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_footer_astro",
+      "target": "components_footer_navlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source": "src_components_footer_astro",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Lightbox.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_lightbox_tsx",
+      "target": "components_lightbox_lightboximage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Lightbox.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_components_lightbox_tsx",
+      "target": "components_lightbox_lightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_mobilenav_tsx",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "src_components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "src_components_ui_textarea_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "ui_textarea_textarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "src_components_ui_label_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "ui_label_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "components_contactform_formstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "components_contactform_emptyform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "components_contactform_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ContactForm.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_components_contactform_tsx",
+      "target": "components_contactform_contactform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_mobilenav_tsx",
+      "target": "components_mobilenav_navlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MobileNav.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_mobilenav_tsx",
+      "target": "components_mobilenav_mobilenav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "ui_input_inputprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "ui_textarea_textareaprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "ui_textarea_textarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_label_tsx",
+      "target": "ui_label_labelprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/label.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_ui_label_tsx",
+      "target": "ui_label_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenusubtrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenusubcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenucontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenuitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenucheckboxitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenuradioitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenulabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenuseparator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/dropdown-menu.tsx",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "src_components_ui_dropdown_menu_tsx",
+      "target": "ui_dropdown_menu_dropdownmenushortcut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_buttonvariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_buttonprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_renderresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_renderedcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_flatten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_collectionkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_collectionentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_allvaluesof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_referencedataentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_referenceliveentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_inferentryschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extractloaderconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_inferloaderschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_dataentrymap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extractloadertypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extractentryfiltertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extractcollectionfiltertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extracterrortype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_extractdatatype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_liveloaderdatatype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_liveloaderentryfiltertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_liveloadercollectionfiltertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_liveloadererrortype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_contentconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/content.d.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "astro_content_d_ts",
+      "target": "astro_content_d_livecontentconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "astro_settings_json",
+      "target": "astro_settings_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "astro_settings_variables",
+      "target": "astro_settings_variables_lastupdatecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_company_entity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 25",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_design_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 52",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_page_structure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 21",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_astro_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 9",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_b2g_buyers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 69",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_manufacturing_process"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 72",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_certifications"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 82",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_contact_form"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 23",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_unsplash_placeholders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 19",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_editorial_showcase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 104",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_jsonld_seo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": "line 64",
+      "weight": 1.0,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_product_segments"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PLAN.md",
+      "source_location": "line 3",
+      "weight": 0.95,
+      "source": "bosta_plan_landing_site",
+      "target": "bosta_product_brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PLAN.md",
+      "source_location": "line 64",
+      "weight": 0.95,
+      "source": "bosta_plan_landing_site",
+      "target": "docs_info_company_profile"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 14",
+      "weight": 1.0,
+      "source": "bosta_product_brief",
+      "target": "bosta_company_entity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 8",
+      "weight": 1.0,
+      "source": "bosta_product_brief",
+      "target": "bosta_b2g_buyers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 33",
+      "weight": 1.0,
+      "source": "bosta_product_brief",
+      "target": "bosta_brand_principles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 42",
+      "weight": 1.0,
+      "source": "bosta_product_brief",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 37",
+      "weight": 1.0,
+      "source": "bosta_product_brief",
+      "target": "bosta_durability_thesis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_astro_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 53",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_ink_muted_contrast_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 74",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_lightbox_a11y_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 99",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_hamburger_touch_target_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 162",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_animation_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 183",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_color_token_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 173",
+      "weight": 1.0,
+      "source": "bosta_audit_report",
+      "target": "bosta_contact_form"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT.md",
+      "source_location": "line 267",
+      "weight": 0.95,
+      "source": "bosta_audit_report",
+      "target": "bosta_audit_actions_plan"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AUDIT.md",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "bosta_audit_report",
+      "target": "bosta_audit_patterns_guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_ink_muted_contrast_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 47",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_lightbox_a11y_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 180",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_hamburger_touch_target_issue"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 55",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_lightbox_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 180",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_mobile_nav"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 213",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_hero_section"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_ACTIONS.md",
+      "source_location": "line 253",
+      "weight": 1.0,
+      "source": "bosta_audit_actions_plan",
+      "target": "bosta_animation_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_animation_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 79",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_contact_form"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 142",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_color_token_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 205",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_responsive_grid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 269",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_mobile_nav"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 340",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_hero_section"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 411",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_semantic_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 483",
+      "weight": 1.0,
+      "source": "bosta_audit_patterns_guide",
+      "target": "bosta_fluid_typography"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 11",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_company_entity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 32",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_manufacturing_process"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 42",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_product_segments"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 63",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_certifications"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 64",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_b2g_buyers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 22",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_company_structure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 64",
+      "weight": 1.0,
+      "source": "docs_info_company_profile",
+      "target": "bosta_b2g_sales_model"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/workflows/deploy.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "github_deploy_workflow",
+      "target": "bosta_github_pages_deployment"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".github/workflows/deploy.yml",
+      "source_location": "line 22",
+      "weight": 0.85,
+      "source": "github_deploy_workflow",
+      "target": "bosta_astro_stack"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 22",
+      "weight": 0.95,
+      "source": "bosta_company_structure",
+      "target": "bosta_company_entity"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 142",
+      "weight": 0.95,
+      "source": "bosta_color_token_system",
+      "target": "bosta_design_system"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PLAN.md",
+      "source_location": "line 48",
+      "weight": 0.95,
+      "source": "bosta_animation_system",
+      "target": "bosta_design_system"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PLAN.md",
+      "source_location": "line 45",
+      "weight": 0.95,
+      "source": "bosta_fluid_typography",
+      "target": "bosta_design_system"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 33",
+      "weight": 0.95,
+      "source": "bosta_brand_principles",
+      "target": "bosta_design_system"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AUDIT.md",
+      "source_location": "line 61",
+      "weight": 0.85,
+      "source": "bosta_color_token_system",
+      "target": "bosta_ink_muted_contrast_issue"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 50",
+      "weight": 0.75,
+      "source": "bosta_animation_system",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT.md",
+      "source_location": "line 99",
+      "weight": 0.95,
+      "source": "bosta_mobile_nav",
+      "target": "bosta_hamburger_touch_target_issue"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT.md",
+      "source_location": "line 74",
+      "weight": 0.95,
+      "source": "bosta_lightbox_component",
+      "target": "bosta_lightbox_a11y_issue"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AUDIT.md",
+      "source_location": "line 140",
+      "weight": 0.85,
+      "source": "bosta_hero_section",
+      "target": "bosta_unsplash_placeholders"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md",
+      "source_location": "line 64",
+      "weight": 0.85,
+      "source": "bosta_product_segments",
+      "target": "bosta_page_structure"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 64",
+      "weight": 0.85,
+      "source": "bosta_certifications",
+      "target": "bosta_b2g_buyers"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "DOCS/INFO.MD",
+      "source_location": "line 64",
+      "weight": 0.95,
+      "source": "bosta_b2g_buyers",
+      "target": "bosta_b2g_sales_model"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md",
+      "source_location": "line 104",
+      "weight": 0.85,
+      "source": "bosta_jsonld_seo",
+      "target": "bosta_b2g_buyers"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 37",
+      "weight": 0.95,
+      "source": "bosta_durability_thesis",
+      "target": "bosta_brand_principles"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "PRODUCT.md",
+      "source_location": "line 33",
+      "weight": 0.95,
+      "source": "bosta_editorial_showcase",
+      "target": "bosta_brand_principles"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md",
+      "source_location": "line 69",
+      "weight": 0.85,
+      "source": "bosta_manufacturing_process",
+      "target": "bosta_durability_thesis"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 59",
+      "weight": 1.0,
+      "source": "bosta_ink_muted_contrast_issue",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 76",
+      "weight": 1.0,
+      "source": "bosta_lightbox_a11y_issue",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AUDIT.md",
+      "source_location": "line 103",
+      "weight": 1.0,
+      "source": "bosta_hamburger_touch_target_issue",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": "line 411",
+      "weight": 0.85,
+      "source": "bosta_semantic_html",
+      "target": "bosta_wcag_accessibility"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "AUDIT_PATTERNS.md",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "bosta_responsive_grid",
+      "target": "bosta_fluid_typography"
+    },
+    {
+      "relation": "represents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_logo",
+      "target": "bosta_bosta-logo-new_brand_identity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_logo",
+      "target": "bosta_bosta-logo-new_wordmark"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_logo",
+      "target": "bosta_bosta-logo-new_icon_mark"
+    },
+    {
+      "relation": "contains",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_logo",
+      "target": "bosta_bosta-logo-new_tagline_text"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_wordmark",
+      "target": "bosta_bosta-logo-new_dark_text_color"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_icon_mark",
+      "target": "bosta_bosta-logo-new_gold_gradient"
+    },
+    {
+      "relation": "uses_technique",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_icon_mark",
+      "target": "bosta_bosta-logo-new_diagonal_stripe_effect"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_brand_identity",
+      "target": "bosta_bosta-logo-new_gold_gradient"
+    },
+    {
+      "relation": "layered_within",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_diagonal_stripe_effect",
+      "target": "bosta_bosta-logo-new_gold_gradient"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_tagline_text",
+      "target": "bosta_bosta-logo-new_dark_text_color"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_bosta-logo-new_brand_identity",
+      "target": "bosta_bosta-logo-new_dark_text_color"
+    },
+    {
+      "relation": "represents_brand",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_app_icon",
+      "target": "bosta_icon_brand_logo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_app_icon",
+      "target": "bosta_icon_letter_b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_app_icon",
+      "target": "bosta_icon_shape_circle"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_app_icon",
+      "target": "bosta_icon_color_red"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_app_icon",
+      "target": "bosta_icon_color_white"
+    },
+    {
+      "relation": "represents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_brand_logo",
+      "target": "bosta_icon_letter_b"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_letter_b",
+      "target": "bosta_icon_color_white"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bosta_icon_shape_circle",
+      "target": "bosta_icon_color_red"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "public_favicon_svg",
+      "target": "public_favicon_letter_b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "public_favicon_svg",
+      "target": "public_favicon_background_rect"
+    },
+    {
+      "relation": "serves_as",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_favicon_svg",
+      "target": "public_favicon_browser_icon"
+    },
+    {
+      "relation": "represents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_favicon_svg",
+      "target": "public_favicon_brand_bosta"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "public_favicon_svg",
+      "target": "public_favicon_color_dark_navy"
+    },
+    {
+      "relation": "symbolizes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "public_favicon_letter_b",
+      "target": "public_favicon_brand_bosta"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "public_favicon_letter_b",
+      "target": "public_favicon_color_white"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "public_favicon_background_rect",
+      "target": "public_favicon_color_dark_navy"
+    },
+    {
+      "relation": "part_of_brand_palette",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_favicon_color_dark_navy",
+      "target": "public_favicon_brand_bosta"
+    },
+    {
+      "relation": "represents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_svg",
+      "target": "public_bosta_logo_new_brand_identity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_svg",
+      "target": "public_bosta_logo_new_wordmark"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_svg",
+      "target": "public_bosta_logo_new_monogram"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_svg",
+      "target": "public_bosta_logo_new_gold_gradient"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_svg",
+      "target": "public_bosta_logo_new_dark_text"
+    },
+    {
+      "relation": "characterized_by",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_brand_identity",
+      "target": "public_bosta_logo_new_gold_gradient"
+    },
+    {
+      "relation": "composed_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_brand_identity",
+      "target": "public_bosta_logo_new_wordmark"
+    },
+    {
+      "relation": "composed_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_brand_identity",
+      "target": "public_bosta_logo_new_monogram"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_wordmark",
+      "target": "public_bosta_logo_new_dark_text"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_wordmark",
+      "target": "public_bosta_logo_new_serif_font"
+    },
+    {
+      "relation": "styled_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_monogram",
+      "target": "public_bosta_logo_new_gold_gradient"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_monogram",
+      "target": "public_bosta_logo_new_diagonal_stroke"
+    },
+    {
+      "relation": "expressed_through",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/bosta-logo-new.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_bosta_logo_new_gold_gradient",
+      "target": "public_bosta_logo_new_diagonal_stroke"
+    },
+    {
+      "relation": "is_a",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_png",
+      "target": "public_icon_brand_icon"
+    },
+    {
+      "relation": "serves_as",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_png",
+      "target": "public_icon_favicon"
+    },
+    {
+      "relation": "represents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_lettermark_b",
+      "target": "public_icon_brand_icon"
+    },
+    {
+      "relation": "has_shape",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_brand_icon",
+      "target": "public_icon_circular_shape"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_brand_icon",
+      "target": "public_icon_color_red"
+    },
+    {
+      "relation": "uses_color",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_icon_lettermark_b",
+      "target": "public_icon_color_white"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "bosta_wcag_issues_triad",
+      "label": "Three WCAG Audit Issues Requiring Action",
+      "nodes": [
+        "bosta_ink_muted_contrast_issue",
+        "bosta_lightbox_a11y_issue",
+        "bosta_hamburger_touch_target_issue"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT.md"
+    },
+    {
+      "id": "bosta_manufacturing_credibility_trio",
+      "label": "Manufacturing Credibility Core: Process + Certifications + Durability",
+      "nodes": [
+        "bosta_manufacturing_process",
+        "bosta_certifications",
+        "bosta_durability_thesis"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md"
+    },
+    {
+      "id": "bosta_design_system_foundations",
+      "label": "Design System Foundations: Color + Typography + Motion",
+      "nodes": [
+        "bosta_color_token_system",
+        "bosta_fluid_typography",
+        "bosta_animation_system"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "AUDIT_PATTERNS.md"
+    }
+  ],
+  "built_at_commit": "2ffb38b737aa99e61fb73c4d44e6b3868f7bff20"
+}
