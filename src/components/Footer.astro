@@ -1,12 +1,14 @@
 ---
+import { Package, Workflow, BadgeCheck, Building2, Mail, MapPin, Clock } from 'lucide-react';
+
 const year = new Date().getFullYear();
 
 const navLinks = [
-  { href: '#produkty',    label: 'Produkty' },
-  { href: '#proces',      label: 'Proces' },
-  { href: '#certyfikaty', label: 'Certyfikaty' },
-  { href: '#o-firmie',    label: 'O firmie' },
-  { href: '#kontakt',     label: 'Kontakt' },
+  { href: '#produkty',    label: 'Produkty',    Icon: Package },
+  { href: '#proces',      label: 'Proces',      Icon: Workflow },
+  { href: '#certyfikaty', label: 'Certyfikaty', Icon: BadgeCheck },
+  { href: '#o-firmie',    label: 'O firmie',    Icon: Building2 },
+  { href: '#kontakt',     label: 'Kontakt',     Icon: Mail },
 ];
 ---
 
@@ -15,24 +17,24 @@ const navLinks = [
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
       <!-- Brand -->
       <div class="lg:col-span-2">
-        <a href="/" class="font-display font-extrabold text-2xl text-white tracking-tighter block mb-4">
-          BOSTA
+        <a href="/" class="block mb-4" aria-label="BOSTA — strona główna">
+          <img src={`${import.meta.env.BASE_URL}bosta-logo-new.svg`} alt="BOSTA" class="h-9 w-auto" />
         </a>
-        <p class="text-sm text-white/55 leading-relaxed max-w-sm mb-6">
+        <p class="text-sm text-white/55 leading-relaxed max-w-sm">
           Producent mebli szkolnych, przedszkolnych i biurowych. Własna produkcja end-to-end od 1992 roku.
           Dowozimy i montujemy w całej Polsce.
         </p>
-        <p class="label-caps text-white/35">pon – pt: 06:00 – 15:00</p>
       </div>
 
       <!-- Navigation -->
       <nav aria-label="Nawigacja stopki">
         <p class="label-caps text-white/35 mb-4">Nawigacja</p>
-        <ul class="space-y-2" role="list">
-          {navLinks.map((link) => (
+        <ul class="space-y-2.5" role="list">
+          {navLinks.map(({ href, label, Icon }) => (
             <li>
-              <a href={link.href} class="text-sm text-white/60 hover:text-white transition-colors">
-                {link.label}
+              <a href={href} class="flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors group">
+                <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                {label}
               </a>
             </li>
           ))}
@@ -43,16 +45,26 @@ const navLinks = [
       <div>
         <p class="label-caps text-white/35 mb-4">Adresy</p>
         <div class="space-y-5">
-          <address class="not-italic">
-            <p class="text-xs text-white/40 mb-1">Centrum logistyczno-handlowe</p>
-            <p class="text-sm text-white/70">ul. Drogowców 7</p>
-            <p class="text-sm text-white/70">32-400 Myślenice</p>
+          <address class="not-italic flex gap-2.5">
+            <MapPin className="w-3.5 h-3.5 text-white/30 mt-0.5 flex-shrink-0" />
+            <div>
+              <p class="text-xs text-white/40 mb-1">Centrum logistyczno-handlowe</p>
+              <p class="text-sm text-white/70">ul. Drogowców 7</p>
+              <p class="text-sm text-white/70">32-400 Myślenice</p>
+            </div>
           </address>
-          <address class="not-italic">
-            <p class="text-xs text-white/40 mb-1">Zakład produkcyjny</p>
-            <p class="text-sm text-white/70">Polanka 133</p>
-            <p class="text-sm text-white/70">32-400 Myślenice</p>
+          <address class="not-italic flex gap-2.5">
+            <MapPin className="w-3.5 h-3.5 text-white/30 mt-0.5 flex-shrink-0" />
+            <div>
+              <p class="text-xs text-white/40 mb-1">Zakład produkcyjny</p>
+              <p class="text-sm text-white/70">Polanka 133</p>
+              <p class="text-sm text-white/70">32-400 Myślenice</p>
+            </div>
           </address>
+          <div class="flex gap-2.5 items-start">
+            <Clock className="w-3.5 h-3.5 text-white/30 mt-0.5 flex-shrink-0" />
+            <p class="label-caps text-white/35">pon – pt: 06:00 – 15:00</p>
+          </div>
         </div>
       </div>
     </div>

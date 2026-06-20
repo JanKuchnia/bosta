@@ -1,12 +1,13 @@
 ---
 import MobileNav from './MobileNav.tsx';
+import { ArrowRight, Package, Workflow, BadgeCheck, Building2, Mail } from 'lucide-react';
 
 const navLinks = [
-  { href: '#produkty',    label: 'Produkty' },
-  { href: '#proces',      label: 'Proces' },
-  { href: '#certyfikaty', label: 'Certyfikaty' },
-  { href: '#o-firmie',    label: 'O firmie' },
-  { href: '#kontakt',     label: 'Kontakt' },
+  { href: '#produkty',    label: 'Produkty',    Icon: Package },
+  { href: '#proces',      label: 'Proces',      Icon: Workflow },
+  { href: '#certyfikaty', label: 'Certyfikaty', Icon: BadgeCheck },
+  { href: '#o-firmie',    label: 'O firmie',    Icon: Building2 },
+  { href: '#kontakt',     label: 'Kontakt',     Icon: Mail },
 ];
 ---
 
@@ -15,20 +16,21 @@ const navLinks = [
   class="fixed top-0 left-0 right-0 z-50"
   aria-label="Nawigacja główna"
 >
-  <div class="container-site flex items-center justify-between h-16 md:h-20">
-    <!-- Wordmark -->
-    <a href="/" class="nav-logo font-display font-extrabold text-2xl tracking-tighter text-white transition-colors" aria-label="BOSTA — strona główna">
-      BOSTA
+  <div class="container-site flex items-center justify-between h-20 md:h-24">
+    <!-- Logo -->
+    <a href="/" class="nav-logo" aria-label="BOSTA — strona główna">
+      <img src={`${import.meta.env.BASE_URL}bosta-logo-new.svg`} alt="BOSTA" class="h-10 w-auto" />
     </a>
 
     <!-- Desktop nav -->
-    <nav class="hidden lg:flex items-center gap-8" aria-label="Menu">
-      {navLinks.map((link) => (
+    <nav class="hidden lg:flex items-center gap-6" aria-label="Menu">
+      {navLinks.map(({ href, label, Icon }) => (
         <a
-          href={link.href}
-          class="nav-link label-caps text-white/80 hover:text-white transition-colors"
+          href={href}
+          class="nav-link flex items-center gap-1.5 label-caps text-white/80 hover:text-white transition-colors group"
         >
-          {link.label}
+          <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
+          {label}
         </a>
       ))}
     </nav>
@@ -37,9 +39,10 @@ const navLinks = [
     <div class="flex items-center gap-3">
       <a
         href="#kontakt"
-        class="hidden sm:inline-flex items-center h-9 px-5 bg-gold text-ink font-display font-semibold text-sm tracking-tight"
+        class="hidden sm:inline-flex items-center gap-2 h-9 px-5 bg-gold text-ink font-display font-semibold text-sm tracking-tight"
       >
         Zapytaj o wycenę
+        <ArrowRight className="w-3.5 h-3.5" />
       </a>
 
       <MobileNav client:load />

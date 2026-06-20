@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import {
+  Send, Loader2, User, Building2, Mail, Phone, MessageSquare, ShieldCheck,
+} from 'lucide-react';
 
-// ── Replace with your Web3Forms access key from https://web3forms.com ──
 const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
 
 interface FormState {
@@ -16,13 +18,22 @@ interface FormState {
   message: string;
 }
 
-const emptyForm: FormState = {
-  name: '',
-  institution: '',
-  email: '',
-  phone: '',
-  message: '',
-};
+const emptyForm: FormState = { name: '', institution: '', email: '', phone: '', message: '' };
+
+function Field({
+  icon: Icon,
+  children,
+}: {
+  icon: React.ElementType;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="relative">
+      <Icon className="absolute left-3 top-[2.1rem] w-4 h-4 text-ink-muted/60 pointer-events-none z-10" />
+      <div className="[&_input]:pl-10 [&_textarea]:pl-10">{children}</div>
+    </div>
+  );
+}
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(emptyForm);
@@ -36,7 +47,6 @@ export default function ContactForm() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitting(true);
-
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -53,9 +63,7 @@ export default function ContactForm() {
           botcheck: '',
         }),
       });
-
       const data = await res.json();
-
       if (data.success) {
         toast.success('Wiadomość wysłana!', {
           description: 'Odpiszemy w godzinach pracy (pn–pt 06:00–15:00).',
@@ -64,7 +72,7 @@ export default function ContactForm() {
       } else {
         throw new Error(data.message || 'Błąd wysyłki');
       }
-    } catch (err) {
+    } catch {
       toast.error('Wystąpił błąd', {
         description: 'Spróbuj ponownie lub napisz bezpośrednio na adres e-mail.',
       });
@@ -76,90 +84,120 @@ export default function ContactForm() {
   return (
     <>
       <Toaster richColors position="top-right" />
-      <form onSubmit={handleSubmit} noValidate>
-        {/* Bot trap — hidden from humans */}
-        <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-6">
+      <div className="bg-canvas border border-border-subtle p-8 lg:p-10">
+        {/* Form header */}
+        <div className="flex items-center gap-3 mb-8 pb-6 border-b border-border-subtle">
+          <div className="flex items-center justify-center w-9 h-9 bg-cta/10 text-cta">
+            <MessageSquare className="w-4 h-4" />
+          </div>
           <div>
-            <Label htmlFor="name">Imię i nazwisko *</Label>
-            <Input
-              id="name"
-              name="name"
+            <p className="font-display font-bold text-ink text-sm leading-tight">Formularz zapytania</p>
+            <p className="text-xs text-ink-muted">Odpowiadamy w ciągu 1 dnia roboczego</p>
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} noValidate>
+          <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+
+          {/* Row 1 */}
+          <div className="grid sm:grid-cols-2 gap-5 mb-5">
+            <Field icon={User}>
+              <Label htmlFor="name">Imię i nazwisko *</Label>
+              <Input
+                id="name"
+                name="name"
+                required
+                value={form.name}
+                onChange={set('name')}
+                placeholder="Jan Kowalski"
+                autoComplete="name"
+              />
+            </Field>
+            <Field icon={Building2}>
+              <Label htmlFor="institution">Instytucja / firma *</Label>
+              <Input
+                id="institution"
+                name="institution"
+                required
+                value={form.institution}
+                onChange={set('institution')}
+                placeholder="Szkoła Podstawowa nr 1"
+              />
+            </Field>
+          </div>
+
+          {/* Row 2 */}
+          <div className="grid sm:grid-cols-2 gap-5 mb-5">
+            <Field icon={Mail}>
+              <Label htmlFor="email">Adres e-mail *</Label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                required
+                value={form.email}
+                onChange={set('email')}
+                placeholder="jan@szkola.pl"
+                autoComplete="email"
+              />
+            </Field>
+            <Field icon={Phone}>
+              <Label htmlFor="phone">Telefon</Label>
+              <Input
+                id="phone"
+                name="phone"
+                type="tel"
+                value={form.phone}
+                onChange={set('phone')}
+                placeholder="+48 123 456 789"
+                autoComplete="tel"
+              />
+            </Field>
+          </div>
+
+          {/* Message */}
+          <div className="relative mb-8">
+            <MessageSquare className="absolute left-3 top-[2.35rem] w-4 h-4 text-ink-muted/60 pointer-events-none z-10" />
+            <Label htmlFor="message">Wiadomość *</Label>
+            <Textarea
+              id="message"
+              name="message"
               required
-              value={form.name}
-              onChange={set('name')}
-              placeholder="Jan Kowalski"
-              autoComplete="name"
+              value={form.message}
+              onChange={set('message')}
+              className="pl-10 min-h-[140px]"
+              placeholder="Opisz placówkę, zakres wyposażenia, liczbę pomieszczeń, preferowany termin realizacji…"
             />
           </div>
-          <div>
-            <Label htmlFor="institution">Instytucja / firma *</Label>
-            <Input
-              id="institution"
-              name="institution"
-              required
-              value={form.institution}
-              onChange={set('institution')}
-              placeholder="Szkoła Podstawowa nr 1"
-            />
-          </div>
-        </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-6">
-          <div>
-            <Label htmlFor="email">Adres e-mail *</Label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              required
-              value={form.email}
-              onChange={set('email')}
-              placeholder="jan@szkola.pl"
-              autoComplete="email"
-            />
+          {/* Footer row */}
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between pt-6 border-t border-border-subtle">
+            <Button
+              type="submit"
+              size="lg"
+              disabled={submitting}
+              className="w-full sm:w-auto"
+            >
+              {submitting ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  Wysyłanie…
+                </>
+              ) : (
+                <>
+                  Wyślij zapytanie
+                  <Send className="w-4 h-4" />
+                </>
+              )}
+            </Button>
+            <p className="flex items-start gap-1.5 text-xs text-ink-muted leading-relaxed max-w-xs">
+              <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-cta" />
+              Dane przekazywane bezpiecznie. Nie udostępniamy ich osobom trzecim.
+            </p>
           </div>
-          <div>
-            <Label htmlFor="phone">Telefon</Label>
-            <Input
-              id="phone"
-              name="phone"
-              type="tel"
-              value={form.phone}
-              onChange={set('phone')}
-              placeholder="+48 123 456 789"
-              autoComplete="tel"
-            />
-          </div>
-        </div>
-
-        <div className="mb-8">
-          <Label htmlFor="message">Wiadomość *</Label>
-          <Textarea
-            id="message"
-            name="message"
-            required
-            value={form.message}
-            onChange={set('message')}
-            placeholder="Opisz placówkę, zakres wyposażenia, liczbę pomieszczeń, preferowany termin realizacji…"
-          />
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-          <Button
-            type="submit"
-            size="lg"
-            disabled={submitting}
-            className="w-full sm:w-auto"
-          >
-            {submitting ? 'Wysyłanie…' : 'Wyślij zapytanie'}
-          </Button>
-          <p className="text-xs text-ink-muted leading-relaxed max-w-xs">
-            Odpowiadamy w ciągu 1 dnia roboczego. Dane przekazywane bezpiecznie przez Web3Forms.
-          </p>
-        </div>
-      </form>
+        </form>
+      </div>
     </>
   );
 }

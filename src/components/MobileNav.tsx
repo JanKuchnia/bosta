@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronRight, ArrowRight, Package, Workflow, BadgeCheck, Building2, Mail } from 'lucide-react';
 
 const navLinks = [
-  { href: '#produkty',    label: 'Produkty' },
-  { href: '#proces',      label: 'Proces' },
-  { href: '#certyfikaty', label: 'Certyfikaty' },
-  { href: '#o-firmie',    label: 'O firmie' },
-  { href: '#kontakt',     label: 'Kontakt' },
+  { href: '#produkty',    label: 'Produkty',    Icon: Package },
+  { href: '#proces',      label: 'Proces',      Icon: Workflow },
+  { href: '#certyfikaty', label: 'Certyfikaty', Icon: BadgeCheck },
+  { href: '#o-firmie',    label: 'O firmie',    Icon: Building2 },
+  { href: '#kontakt',     label: 'Kontakt',     Icon: Mail },
 ];
 
 export default function MobileNav() {
@@ -47,22 +47,27 @@ export default function MobileNav() {
       style={{ maxHeight: 0 }}
     >
       <nav className="container-site py-6 flex flex-col gap-4" aria-label="Menu mobilne">
-        {navLinks.map((link) => (
+        {navLinks.map(({ href, label, Icon }) => (
           <a
-            key={link.href}
-            href={link.href}
+            key={href}
+            href={href}
             onClick={() => setOpen(false)}
-            className="font-display font-semibold text-lg text-white/90 hover:text-white transition-colors"
+            className="flex items-center justify-between font-display font-semibold text-lg text-white/90 hover:text-white transition-colors"
           >
-            {link.label}
+            <span className="flex items-center gap-3">
+              <Icon className="w-4 h-4 text-white/50" />
+              {label}
+            </span>
+            <ChevronRight className="w-4 h-4 text-white/30" />
           </a>
         ))}
         <a
           href="#kontakt"
           onClick={() => setOpen(false)}
-          className="mt-2 inline-flex items-center h-11 px-6 bg-gold text-ink font-display font-semibold text-sm tracking-tight w-fit"
+          className="mt-2 inline-flex items-center gap-2 h-11 px-6 bg-gold text-ink font-display font-semibold text-sm tracking-tight w-fit"
         >
           Zapytaj o wycenę
+          <ArrowRight className="w-4 h-4" />
         </a>
       </nav>
     </div>

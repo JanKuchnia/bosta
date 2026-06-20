@@ -1,5 +1,6 @@
 ---
 import ContactForm from './ContactForm';
+import { Clock, MapPin, FileText } from 'lucide-react';
 ---
 
 <section id="kontakt" class="section-pad bg-surface-raised border-t border-border-subtle" aria-label="Kontakt i wycena">
@@ -19,14 +20,20 @@ import ContactForm from './ContactForm';
         <div class="reveal reveal-d3 space-y-8">
           <!-- Hours -->
           <div class="border-l-2 border-cta pl-4">
-            <p class="label-caps text-ink-muted mb-1">Godziny pracy</p>
+            <p class="label-caps text-ink-muted mb-1 flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5" />
+              Godziny pracy
+            </p>
             <p class="font-display font-bold text-ink">Poniedziałek – Piątek</p>
             <p class="text-ink-muted">06:00 – 15:00</p>
           </div>
 
           <!-- Addresses -->
           <div class="border-l-2 border-border-subtle pl-4">
-            <p class="label-caps text-ink-muted mb-3">Adresy</p>
+            <p class="label-caps text-ink-muted mb-3 flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5" />
+              Adresy
+            </p>
             <div class="space-y-4">
               <address class="not-italic">
                 <p class="font-display font-semibold text-ink text-sm mb-0.5">Centrum logistyczno-handlowe</p>
@@ -41,7 +48,10 @@ import ContactForm from './ContactForm';
 
           <!-- NIP for procurement -->
           <div class="border-l-2 border-border-subtle pl-4">
-            <p class="label-caps text-ink-muted mb-2">Dane do przetargu</p>
+            <p class="label-caps text-ink-muted mb-2 flex items-center gap-1.5">
+              <FileText className="w-3.5 h-3.5" />
+              Dane do przetargu
+            </p>
             <p class="text-sm text-ink font-display font-medium">NIP: 6810004062</p>
             <p class="text-sm text-ink font-display font-medium">REGON: 351010570</p>
             <p class="text-sm text-ink font-display font-medium">KRS: 0001208011</p>
