@@ -24,6 +24,9 @@ import { products } from '@/data/products';
             height="900"
             data-lightbox={product.image}
             data-lightbox-alt={product.imageAlt}
+            role="button"
+            tabindex="0"
+            aria-label={`Powiększ zdjęcie — ${product.title}`}
           />
           <!-- Subtle number overlay -->
           <span

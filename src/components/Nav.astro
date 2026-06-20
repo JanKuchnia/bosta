@@ -1,10 +1,12 @@
 ---
+import MobileNav from './MobileNav.tsx';
+
 const navLinks = [
-  { href: '#produkty',      label: 'Produkty' },
-  { href: '#proces',        label: 'Proces' },
-  { href: '#certyfikaty',   label: 'Certyfikaty' },
-  { href: '#o-firmie',      label: 'O firmie' },
-  { href: '#kontakt',       label: 'Kontakt' },
+  { href: '#produkty',    label: 'Produkty' },
+  { href: '#proces',      label: 'Proces' },
+  { href: '#certyfikaty', label: 'Certyfikaty' },
+  { href: '#o-firmie',    label: 'O firmie' },
+  { href: '#kontakt',     label: 'Kontakt' },
 ];
 ---
 
@@ -32,7 +34,7 @@ const navLinks = [
     </nav>
 
     <!-- CTA + mobile toggle -->
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-3">
       <a
         href="#kontakt"
         class="hidden sm:inline-flex items-center h-9 px-5 bg-cta text-white font-display font-semibold text-sm tracking-tight hover:bg-cta-hover transition-colors"
@@ -40,95 +42,18 @@ const navLinks = [
         Zapytaj o wycenę
       </a>
 
-      <!-- Mobile hamburger -->
-      <button
-        id="menu-toggle"
-        aria-label="Otwórz menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        class="lg:hidden flex flex-col gap-1.5 p-2 -mr-2"
-      >
-        <span class="hamburger-line block w-6 h-0.5 bg-white transition-all origin-center"></span>
-        <span class="hamburger-line block w-6 h-0.5 bg-white transition-all origin-center"></span>
-        <span class="hamburger-line block w-4 h-0.5 bg-white transition-all origin-center self-end"></span>
-      </button>
+      <MobileNav client:load />
     </div>
-  </div>
-
-  <!-- Mobile drawer -->
-  <div
-    id="mobile-menu"
-    class="mobile-menu lg:hidden overflow-hidden max-h-0 transition-all duration-300 ease-out bg-graphite-dark"
-    aria-hidden="true"
-  >
-    <nav class="container-site py-6 flex flex-col gap-4">
-      {navLinks.map((link) => (
-        <a
-          href={link.href}
-          class="mobile-nav-link font-display font-semibold text-lg text-white/90 hover:text-white transition-colors"
-        >
-          {link.label}
-        </a>
-      ))}
-      <a
-        href="#kontakt"
-        class="mt-2 inline-flex items-center h-11 px-6 bg-cta text-white font-display font-semibold text-sm tracking-tight hover:bg-cta-hover transition-colors w-fit"
-      >
-        Zapytaj o wycenę
-      </a>
-    </nav>
   </div>
 </header>
 
 <script>
   const nav = document.getElementById('site-nav')!;
-  const toggle = document.getElementById('menu-toggle')!;
-  const menu = document.getElementById('mobile-menu')!;
-  const lines = nav.querySelectorAll<HTMLElement>('.hamburger-line');
 
-  // Scroll-based solid nav
   const SCROLL_THRESHOLD = 80;
   function updateNav() {
-    const solid = window.scrollY > SCROLL_THRESHOLD;
-    nav.classList.toggle('nav-solid', solid);
-    lines.forEach((l) => l.classList.toggle('bg-ink', solid));
-    lines.forEach((l) => l.classList.toggle('bg-white', !solid));
+    nav.classList.toggle('nav-solid', window.scrollY > SCROLL_THRESHOLD);
   }
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
-
-  // Mobile menu
-  let open = false;
-  function setMenu(val: boolean) {
-    open = val;
-    toggle.setAttribute('aria-expanded', String(val));
-    menu.setAttribute('aria-hidden', String(!val));
-    if (val) {
-      menu.style.maxHeight = menu.scrollHeight + 'px';
-    } else {
-      menu.style.maxHeight = '0';
-    }
-    // Animate hamburger → X
-    if (val) {
-      lines[0].style.transform = 'translateY(8px) rotate(45deg)';
-      lines[1].style.transform = 'translateY(-8px) rotate(-45deg)';
-      lines[2].style.opacity = '0';
-    } else {
-      lines[0].style.transform = '';
-      lines[1].style.transform = '';
-      lines[2].style.opacity = '';
-    }
-  }
-
-  toggle.addEventListener('click', () => setMenu(!open));
-
-  // Close on link click
-  menu.querySelectorAll('a').forEach((a) => {
-    a.addEventListener('click', () => setMenu(false));
-  });
-
-  // Close on outside click
-  document.addEventListener('click', (e) => {
-    if (open && !nav.contains(e.target as Node)) setMenu(false);
-  });
 </script>

@@ -1,6 +1,18 @@
 {
+  "permissions": {
+    "allow": [
+      "Skill(impeccable)",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "Skill(run)",
+      "Bash(curl -s http://localhost:4321)",
+      "mcp__playwright__browser_resize",
+      "Bash(kill %1)",
+      "Bash(npm install *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "shadcn"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
