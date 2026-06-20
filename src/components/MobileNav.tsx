@@ -60,7 +60,7 @@ export default function MobileNav() {
         <a
           href="#kontakt"
           onClick={() => setOpen(false)}
-          className="mt-2 inline-flex items-center h-11 px-6 bg-cta text-white font-display font-semibold text-sm tracking-tight hover:bg-cta-hover transition-colors w-fit"
+          className="mt-2 inline-flex items-center h-11 px-6 bg-gold text-ink font-display font-semibold text-sm tracking-tight w-fit"
         >
           Zapytaj o wycenę
         </a>

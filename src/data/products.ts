@@ -43,7 +43,7 @@ export const products: ProductSegment[] = [
       'Certyfikowane materiały klasy E1',
       'Szeroka paleta kolorów',
     ],
-    image: 'https://images.unsplash.com/photo-1587740920888-73dbff1e9e0b?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://kupmeble.pl/thumbnails/vertical/product/22158/900x600/page-57-ad190d56.webp',
     imageAlt: 'Kolorowe meble przedszkolne z zaoblonymi krawędziami',
     imageLeft: false,
   },
