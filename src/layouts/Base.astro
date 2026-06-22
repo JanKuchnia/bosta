@@ -82,7 +82,7 @@ const jsonLD = {
     <meta name="twitter:image" content={image} />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}icon.png`} />
+    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/icon.png`} />
 
     <!-- JSON-LD -->
     <script type="application/ld+json" set:html={JSON.stringify(jsonLD)} />

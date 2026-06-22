@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import { catalogCategories } from '@/data/catalog';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const totalProducts = catalogCategories.reduce((acc, cat) => acc + cat.products.length, 0);
 
 // Flagship product: school desk — most recognisable, has a real price
@@ -26,7 +26,7 @@ const featured = catalogCategories[0].products[0];
       </div>
       <div class="reveal reveal-d2 shrink-0">
         <a
-          href={`${base}produkty`}
+          href={`${base}/produkty`}
           class="inline-flex items-center gap-2 h-11 px-6 bg-gold text-ink font-display font-semibold text-sm tracking-tight"
         >
           Przeglądaj katalog
@@ -44,7 +44,7 @@ const featured = catalogCategories[0].products[0];
           {catalogCategories.map(cat => (
             <li class="bg-graphite-dark">
               <a
-                href={`${base}produkty`}
+                href={`${base}/produkty`}
                 class="flex items-center justify-between px-5 py-3.5 hover:bg-white/5 transition-colors group"
               >
                 <span class="text-sm text-white/70 group-hover:text-white transition-colors leading-snug">
