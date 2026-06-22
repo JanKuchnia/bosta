@@ -9,7 +9,17 @@
       "mcp__playwright__browser_resize",
       "Bash(kill %1)",
       "Bash(npm install *)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321)",
+      "Bash(graphify query *)",
+      "Bash(curl -s http://localhost:4321/bosta/produkty)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page",
+      "Bash(GOOGLE_CHROME_BIN=/usr/bin/chromium-browser chromium-browser --headless --no-sandbox --screenshot=/tmp/produkty.png --window-size=1280,900 \"http://localhost:4325/bosta/produkty\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(chromium-browser --headless=new --no-sandbox --screenshot=/tmp/produkty.png --window-size=1280,900 \"http://localhost:4325/bosta/produkty\")",
+      "Bash(chromium-browser --headless=new --no-sandbox --screenshot=/tmp/home.png --window-size=1280,900 \"http://localhost:4325/bosta\")",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages",
+      "Bash(npx tsc *)",
+      "Bash(curl *)"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -1,0 +1,48 @@
+---
+import Base from '@/layouts/Base.astro';
+import Nav from '@/components/Nav.astro';
+import Footer from '@/components/Footer.astro';
+import CategoryCatalog from '@/components/CategoryCatalog';
+import { catalogCategories } from '@/data/catalog';
+
+const totalProducts = catalogCategories.reduce((acc, cat) => acc + cat.products.length, 0);
+const buildYear = new Date().getFullYear();
+---
+
+<Base
+  title="Katalog produktów — BOSTA Meble Szkolne i Biurowe"
+  description="Przeglądaj pełny katalog mebli szkolnych, przedszkolnych i biurowych BOSTA. Stoliki, krzesła, szafy, wyposażenie pracowni i wiele więcej."
+>
+  <Nav />
+
+  <main class="min-h-screen">
+    <!-- Page header — dark graphite, factory-spec feel -->
+    <div id="catalog-header" class="bg-graphite-dark border-b border-white/10 pt-20 md:pt-24">
+      <div class="container-site py-10 md:py-12">
+        <h1 class="font-display font-black text-4xl md:text-5xl text-white" style="letter-spacing: -0.04em; line-height: 1.0; text-wrap: balance;">
+          Katalog produktów
+        </h1>
+        <p class="mt-4 text-white/50 text-sm font-display">
+          {catalogCategories.length} kategorii · {totalProducts} produktów · ceny brutto · {buildYear}
+        </p>
+      </div>
+    </div>
+
+    <CategoryCatalog client:load categories={catalogCategories} />
+  </main>
+
+  <Footer />
+</Base>
+
+<script>
+  const nav = document.getElementById('site-nav');
+  const catalogHeader = document.getElementById('catalog-header');
+
+  if (nav && catalogHeader) {
+    function updateCatalogNav() {
+      nav.classList.toggle('nav-solid', catalogHeader.getBoundingClientRect().bottom <= 0);
+    }
+    window.addEventListener('scroll', updateCatalogNav, { passive: true });
+    updateCatalogNav();
+  }
+</script>

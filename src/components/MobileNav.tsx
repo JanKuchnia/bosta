@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { Menu, X, ChevronRight, ArrowRight, Package, Workflow, BadgeCheck, Building2, Mail } from 'lucide-react';
+import { Menu, X, ChevronRight, ArrowRight, Package, Workflow, BadgeCheck, Building2, Mail, LayoutGrid } from 'lucide-react';
 
 const navLinks = [
   { href: '#produkty',    label: 'Produkty',    Icon: Package },
@@ -10,7 +10,11 @@ const navLinks = [
   { href: '#kontakt',     label: 'Kontakt',     Icon: Mail },
 ];
 
-export default function MobileNav() {
+interface Props {
+  catalogUrl: string;
+}
+
+export default function MobileNav({ catalogUrl }: Props) {
   const [open, setOpen] = useState(false);
   const [navEl, setNavEl] = useState<HTMLElement | null>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -61,6 +65,17 @@ export default function MobileNav() {
             <ChevronRight className="w-4 h-4 text-white/30" />
           </a>
         ))}
+        <a
+          href={catalogUrl}
+          onClick={() => setOpen(false)}
+          className="flex items-center justify-between font-display font-semibold text-lg text-white/90 hover:text-white transition-colors"
+        >
+          <span className="flex items-center gap-3">
+            <LayoutGrid className="w-4 h-4 text-white/50" />
+            Katalog
+          </span>
+          <ChevronRight className="w-4 h-4 text-white/30" />
+        </a>
         <a
           href="#kontakt"
           onClick={() => setOpen(false)}
